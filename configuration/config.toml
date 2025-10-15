@@ -1,0 +1,37 @@
+['Log']
+Level       = 'INFO'
+File        = '/home/yzbsj/Code/pycharm/FVCOM_processing/output/log/log'
+
+['FVCOM Output Directory']
+Directory   = '/home/yzbsj/FVCOM_lag/INPDIR/2025'
+
+['Lagrangian']
+Inverse     = false
+Version     = 3
+['Lagrangian.Time Integration']
+DTI         = 30.0
+INSTP       = 600
+DTOUT       = 1.0
+TDRIFT      = 281
+['Lagrangian.Start Time']
+YEARLAG     = 2025
+MONTHLAG    = 4
+DAYLAG      = 3
+HOURLAG     = 23
+['Lagrangian.IO Location']
+INPDIR      = 'INPDIR'
+GEOAREA     = 'subei'
+OUTDIR      = 'OUTDIR'
+INFOFILE    = 'screen'
+LAGINI      = 'particle'
+['Lagrangian.SIGMA or CARTESIAN']
+F_DEPTH     = true
+P_SIGMA     = false
+OUTSIGMA    = false
+['Lagrangian.Random Walk']
+IRW         = 0
+DHOR        = 20.0
+DTRW        = 1.0
+['Lagrangian.Projection Control']
+CART_SHP    = false
+PROJECTION_REFERENCE    = '+proj=longlat +datum=WGS84 +no_defs'
