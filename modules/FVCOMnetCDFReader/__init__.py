@@ -1,45 +1,56 @@
-import datetime
+import toml
+import os
+import glob
 import netCDF4 as nc
 import numpy as np
 from datetime import datetime, timedelta
 import pathlib
-import toml
-from ..log import AppLogger
+from ..Log import AppLogger
 
 class FVCOMResultProcessor: # 用于提取FVCOM输出文件中的时间信息
-    def __init__(self, filename):
+    def __init__(self, configfile: str):
         """
         初始化类
 
         Parameters:
         filename (str): FVCOM输出文件的路径
         """
-        self.filename = filename
+        self.configfile = toml.load(configfile)
         self.dataset = None
         self.time_var = None
-        configfile = toml.load('configuration/config.toml')
-        self.logger = AppLogger('FVCOM_Reader', configfile['Log']['Level'], pathlib.Path(configfile['Log']['File']))
+        self.time_info = None
+        self.filename = None
+        self.logger = AppLogger('FVCOM_Reader', self.configfile['Log']['Level'], pathlib.Path(self.configfile['Log']['File']))
+        # 提取FVCOM文件
+        self.fvcom_files = sorted(glob.glob(os.path.join(self.configfile['FVCOMOutputDirectory']['Directory'],'*.nc')))
+        self.logger.info('Found FVCOM output files: {}'.format(self.fvcom_files))
+        for fvcom_file in self.fvcom_files:
+            self.filename = fvcom_file
+            self.open_dataset()
+            self.time_info = self.get_time_info()
+            self.logger.info('{} Time info: 开始 {};结束 {}'.format(fvcom_file,self.time_info['start_time'],self.time_info['end_time']))
+            self.close_dataset()
 
     def open_dataset(self):
-        """打开NetCDF数据集"""
-        try:
-            self.dataset = nc.Dataset(self.filename, 'r')
+            """打开NetCDF数据集"""
+            try:
+                self.dataset = nc.Dataset(self.filename, 'r')
 
-            self.logger.info('{} Opened'.format(self.filename))
-            # 查找时间变量名（常见的时间变量名）
-            possible_time_vars = ['time', 'Time', 'Times', 'itime', 'itime2']
-            for var in possible_time_vars:
-                if var in self.dataset.variables:
-                    self.time_var = var
-                    break
+                self.logger.info('{} Opened'.format(self.filename))
+                # 查找时间变量名（常见的时间变量名）
+                possible_time_vars = ['time', 'Time', 'Times', 'itime', 'itime2']
+                for var in possible_time_vars:
+                    if var in self.dataset.variables:
+                        self.time_var = var
+                        break
 
-            if self.time_var is None:
-                self.logger.error('Time Variables not Found')
-                raise ValueError("未找到时间变量")
+                if self.time_var is None:
+                    self.logger.error('Time Variables not Found')
+                    raise ValueError("未找到时间变量")
 
-        except Exception as e:
-            self.logger.error('{} not Opened'.format(self.filename))
-            raise
+            except Exception as e:
+                self.logger.error('{} not Opened'.format(self.filename))
+                raise
 
     def close_dataset(self):
         """关闭数据集"""

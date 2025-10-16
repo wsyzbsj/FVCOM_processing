@@ -1,37 +1,41 @@
-['Log']
+[Log]
 Level       = 'INFO'
 File        = '/home/yzbsj/Code/pycharm/FVCOM_processing/output/log/log'
 
-['FVCOM Output Directory']
+[FVCOMOutputDirectory]
 Directory   = '/home/yzbsj/FVCOM_lag/INPDIR/2025'
 
-['Lagrangian']
-Inverse     = false
-Version     = 3
-['Lagrangian.Time Integration']
+[Lagrangian]
+
+[Lagrangian.General]
+Inverse     = true
+SourcePath  = '/home/yzbsj/下载/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/'
+Directory   = '/home/yzbsj/FVCOM_lag'
+CaseName    = 'tst_new'
+[Lagrangian.TimeIntegration]
 DTI         = 30.0
 INSTP       = 600
 DTOUT       = 1.0
 TDRIFT      = 281
-['Lagrangian.Start Time']
+[Lagrangian.StartTime]
 YEARLAG     = 2025
 MONTHLAG    = 4
 DAYLAG      = 3
 HOURLAG     = 23
-['Lagrangian.IO Location']
+[Lagrangian.IOLocation]
 INPDIR      = 'INPDIR'
 GEOAREA     = 'subei'
 OUTDIR      = 'OUTDIR'
 INFOFILE    = 'screen'
 LAGINI      = 'particle'
-['Lagrangian.SIGMA or CARTESIAN']
+[Lagrangian.Coor]
 F_DEPTH     = true
 P_SIGMA     = false
 OUTSIGMA    = false
-['Lagrangian.Random Walk']
+[Lagrangian.RandomWalk]
 IRW         = 0
 DHOR        = 20.0
 DTRW        = 1.0
-['Lagrangian.Projection Control']
+[Lagrangian.ProjectionControl]
 CART_SHP    = false
 PROJECTION_REFERENCE    = '+proj=longlat +datum=WGS84 +no_defs'
