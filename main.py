@@ -14,7 +14,6 @@ if __name__ == "__main__":
     parser.add_argument('--logfile', type=str, default='output/log/log', help='日志文件路径 (默认: output/log/log)')
     parser.add_argument('--starttime', type=str, default='2025-04-02 00:00:00', help='追踪/追溯起始时间')
     parser.add_argument('--endtime', type=str, default='2025-04-03 23:00:00', help='追踪/追溯终止时间')
-    parser.add_argument('--inverse', type=str, default='F', help='是否为追溯模式,T为追溯,F为追踪 (默认:F)')
     parser.add_argument('--geoarea', type=str, default='subei', help='网格位置,默认:subei')
     parser.add_argument('--casename', type=str, default='tst_new', help='追踪namelist文件名,*_run.dat')
     parser.add_argument('--lagini', type=str, default='particle', help='粒子位置,*.dat')
@@ -37,6 +36,11 @@ if __name__ == "__main__":
     else:
         os.makedirs(logpath)
 
+    # 提取FVCOM输出文件时间
+    logger.info('开始 - 读取指定目录下netCDF文件')
+    netcdf_data = modules.FVCOMnetCDFReader.FVCOMResultProcessor(configfile)
+    logger.info('结束 - 读取指定目录下netCDF文件')
+
     # 写入配置文件
     with open(configfile, 'r', encoding='utf-8') as fin:
         data = toml.load(fin)
@@ -44,50 +48,49 @@ if __name__ == "__main__":
         endtime = datetime.strptime(args.endtime, '%Y-%m-%d %H:%M:%S')
         starttime = datetime.strptime(args.starttime, '%Y-%m-%d %H:%M:%S')
         time_run = (endtime-starttime).total_seconds()//3600
-        if args.inverse == 'T':
-            time_run *= -1
-            logger.info('开始时间:{}, 追溯时长:{}小时'.format(starttime,time_run))
-        elif args.inverse == 'F':
-            logger.info('开始时间:{}, 追踪时长:{}小时'.format(starttime,time_run))
-        else:
-            logger.error('追踪/追溯时间为负,错误')
+        # 判断是否异常
+        if starttime == endtime:
+            logger.error('开始结束时间相等，请重新输入')
             raise RuntimeError
-        if time_run < 0:
-            logger.error('追踪/追溯时间为负,错误')
+        if netcdf_data.start_time <= starttime <= netcdf_data.end_time and netcdf_data.start_time <= endtime <= netcdf_data.end_time:   # 正常情况
+            # 判断追踪/追溯
+            if starttime > endtime:
+                inverse = True
+                time_run *= -1
+                logger.info('开始时间:{}, 追溯时长:{}小时'.format(starttime,time_run))
+            else:
+                inverse = False
+                logger.info('开始时间:{}, 追踪时长:{}小时'.format(starttime,time_run))
+            data['Lagrangian']['TimeIntegration']['DTI'] = float(netcdf_data.time_step/20)
+            data['Lagrangian']['TimeIntegration']['INSTP'] = int(netcdf_data.time_step)
+            data['Lagrangian']['TimeIntegration']['TDRIFT'] = int(time_run*(3600/data['Lagrangian']['TimeIntegration']['INSTP']))   # 赋值追踪/追溯时长
+            data['Lagrangian']['General']['CaseName'] = args.casename
+            if inverse:
+                data['Lagrangian']['General']['Inverse'] = True
+            else:
+                data['Lagrangian']['General']['Inverse'] = False
+            data['Lagrangian']['StartTime']['YEARLAG'] = starttime.strftime('%Y')
+            data['Lagrangian']['StartTime']['MONTHLAG'] = starttime.strftime('%m')
+            data['Lagrangian']['StartTime']['DAYLAG'] = starttime.strftime('%d')
+            data['Lagrangian']['StartTime']['HOURLAG'] = starttime.strftime('%H')
+            data['Lagrangian']['IOLocation']['GEOAREA'] = args.geoarea
+            data['Lagrangian']['IOLocation']['LAGINI'] = args.lagini
+            if args.cart_shp == 'F':
+                data['Lagrangian']['ProjectionControl']['CART_SHP'] = False
+            elif args.cart_shp == 'T':
+                data['Lagrangian']['ProjectionControl']['CART_SHP'] = True
+            else:
+                logger.error('坐标系选择T/F错误')
+                raise ValueError
+            fin.close()
+
+            with open(configfile, 'w', encoding='utf-8') as fout:
+                toml.dump(data, fout)
+
+            # 读取并写入离线拉格朗日粒子追踪namelist
+            logger.info('开始 - 写入粒子追踪namelist并编译运行')
+            modules.LagrangianTracking.LagrangianTracking_FVCOMOffline(configfile)
+            logger.info('结束 - 写入粒子追踪namelist并编译运行')
+        else:
+            logger.error('您输入的时间不在指定目录下输出文件的时间范围内')
             raise RuntimeError
-        data['Lagrangian']['TimeIntegration']['TDRIFT'] = int(time_run*(3600/data['Lagrangian']['TimeIntegration']['INSTP']))
-        data['Lagrangian']['General']['CaseName'] = args.casename
-        if args.inverse == 'F':
-            data['Lagrangian']['General']['Inverse'] = False
-        elif args.inverse == 'T':
-            data['Lagrangian']['General']['Inverse'] = True
-        else:
-            logger.error('追溯/追踪选择错误')
-            raise ValueError
-        data['Lagrangian']['StartTime']['YEARLAG'] = starttime.strftime('%Y')
-        data['Lagrangian']['StartTime']['MONTHLAG'] = starttime.strftime('%m')
-        data['Lagrangian']['StartTime']['DAYLAG'] = starttime.strftime('%d')
-        data['Lagrangian']['StartTime']['HOURLAG'] = starttime.strftime('%H')
-        data['Lagrangian']['IOLocation']['GEOAREA'] = args.geoarea
-        data['Lagrangian']['IOLocation']['LAGINI'] = args.lagini
-        if args.cart_shp == 'F':
-            data['Lagrangian']['ProjectionControl']['CART_SHP'] = False
-        elif args.cart_shp == 'T':
-            data['Lagrangian']['ProjectionControl']['CART_SHP'] = True
-        else:
-            logger.error('坐标系选择T/F错误')
-            raise ValueError
-        fin.close()
-
-    with open(configfile, 'w', encoding='utf-8') as fout:
-        toml.dump(data, fout)
-
-# 提取FVCOM输出文件时间
-    logger.info('开始 - 读取指定目录下netCDF文件')
-    modules.FVCOMnetCDFReader.FVCOMResultProcessor(configfile)
-    logger.info('结束 - 读取指定目录下netCDF文件')
-
-    # 读取并写入离线拉格朗日粒子追踪namelist
-    logger.info('开始 - 写入粒子追踪namelist并编译运行')
-    modules.LagrangianTracking.LagrangianTracking_FVCOMOffline(configfile)
-    logger.info('结束 - 写入粒子追踪namelist并编译运行')

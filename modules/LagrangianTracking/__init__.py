@@ -156,7 +156,7 @@ class LagrangianTracking_FVCOMOffline:
         with open('makefile', 'w') as fout:
             fout.writelines(cleaned_lines)
             fout.close()
-        self.logger.info('借宿 - 修改ptraj的makefile(追踪/追溯)')
+        self.logger.info('结束 - 修改ptraj的makefile(追踪/追溯)')
         self.logger.info('结束 - 修改ptraj的makefile(全部)')
         self.logger.info('开始 - 编译ptraj可执行文件')
         os.system('source /usr/share/Modules/init/bash && module use /home/yzbsj/modulefiles && module load apps/netcdf-fortran/4.6.2 && make')
@@ -186,10 +186,10 @@ class LagrangianTracking_FVCOMOffline:
                 current = int(match.group(1))
                 total = int(match.group(2))
 
-                # 更新总小时数（只更新一次）
+                # 更新总时次数（只更新一次）
                 if self.total_hours is None:
                     self.total_hours = total
-                    self.logger.info(f"检测到总小时数: {total}")
+                    self.logger.info(f"检测到总时次数: {total}")
 
                 # 计算百分比
                 if total > 0:
