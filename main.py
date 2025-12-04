@@ -17,7 +17,6 @@ if __name__ == "__main__":
     parser.add_argument('--geoarea', type=str, default='subei', help='网格位置,默认:subei')
     parser.add_argument('--casename', type=str, default='tst_new', help='追踪namelist文件名,*_run.dat')
     parser.add_argument('--lagini', type=str, default='particle', help='粒子位置文件名,*.dat')
-    parser.add_argument('--windon', type=str, default='T', help='是否开启风场')
     parser.add_argument('--dragc', type=str, default='0.005', help='风拖曳系数')
     parser.add_argument('--rotation_angle', type=str, default='0.000', help='旋转角')
     parser.add_argument('--cart_shp', type=str, default='F', help='坐标系统,T为投影坐标,F为球(经纬度)坐标 (默认:F)')
@@ -85,13 +84,6 @@ if __name__ == "__main__":
                 data['Lagrangian']['ProjectionControl']['CART_SHP'] = True
             else:
                 logger.error('坐标系选择T/F错误')
-                raise ValueError
-            if args.windon == 'T':
-                data['Lagrangian']['General']['Wind'] = True
-            elif args.windon == 'F':
-                data['Lagrangian']['General']['Wind'] = False
-            else:
-                logger.error('开启/关闭风错误')
                 raise ValueError
             try:
                 data['Lagrangian']['General']['Dragc'] = float(args.dragc)

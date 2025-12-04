@@ -15,7 +15,6 @@ Inverse     = true
 SourcePath  = '/home/yzbsj/Downloads/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/'
 Directory   = '/home/yzbsj/Documents/FVCOM_lag'
 CaseName    = 'tst_new'
-Wind        = true
 Dragc       = 0.012
 ROTATE_ANGLE= 0.000
 [Lagrangian.TimeIntegration]
