@@ -23,7 +23,6 @@ class LagrangianTracking_FVCOMOffline:
         self.directory = self.configfile['Lagrangian']['General']['Directory']
         self.casename = self.configfile['Lagrangian']['General']['CaseName']
         self.sourcepath = self.configfile['Lagrangian']['General']['SourcePath']
-        self.wind = self.configfile['Lagrangian']['General']['Wind']
         self.dragc = self.configfile['Lagrangian']['General']['Dragc']
         self.rotate_angle = self.configfile['Lagrangian']['General']['ROTATE_ANGLE']
         # namelist所有设置
