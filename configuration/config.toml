@@ -1,17 +1,23 @@
+[General]
+Threads     = 100
+
 [Log]
 Level       = 'INFO'
-File        = '/home/yzbsj/Code/pycharm/FVCOM_processing/output/log/log'
+File        = '/home/yzbsj/文档/Code/pycharm/FVCOM_processing/output/log/log'
 
 [FVCOMOutputDirectory]
-Directory   = '/home/yzbsj/FVCOM_lag/INPDIR/2025'
+Directory   = '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025'
 
 [Lagrangian]
 
 [Lagrangian.General]
 Inverse     = true
-SourcePath  = '/home/yzbsj/下载/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/'
-Directory   = '/home/yzbsj/FVCOM_lag'
+SourcePath  = '/home/yzbsj/Downloads/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/'
+Directory   = '/home/yzbsj/Documents/FVCOM_lag'
 CaseName    = 'tst_new'
+Wind        = true
+Dragc       = 0.012
+ROTATE_ANGLE= 0.000
 [Lagrangian.TimeIntegration]
 DTI         = 30.0
 INSTP       = 600

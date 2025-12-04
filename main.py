@@ -9,15 +9,19 @@ from datetime import datetime,timedelta
 if __name__ == "__main__":
     # 创建命令行参数解析器
     parser = argparse.ArgumentParser(description='FVCOM离线拉格朗日追踪/追溯程序')
-    parser.add_argument('--config', type=str, default='configuration/config_1.toml', help='配置文件路径,默认: configuration/config.toml')
+    parser.add_argument('--config', type=str, default='configuration/config_1.toml', help='配置文件路径,默认: configuration/config1.toml')
     parser.add_argument('--loglevel', type=str, default='INFO', help='配置文件路径 (默认: INFO,可选: ERROR,INFO,DEBUG)')
     parser.add_argument('--logfile', type=str, default='output/log/log', help='日志文件路径 (默认: output/log/log)')
-    parser.add_argument('--starttime', type=str, default='2025-04-02 00:00:00', help='追踪/追溯起始时间')
-    parser.add_argument('--endtime', type=str, default='2025-04-03 23:00:00', help='追踪/追溯终止时间')
+    parser.add_argument('--starttime', type=str, default='2025-05-29 06:00:00', help='追踪/追溯起始时间')
+    parser.add_argument('--endtime', type=str, default='2025-04-27 06:00:00', help='追踪/追溯终止时间')
     parser.add_argument('--geoarea', type=str, default='subei', help='网格位置,默认:subei')
     parser.add_argument('--casename', type=str, default='tst_new', help='追踪namelist文件名,*_run.dat')
-    parser.add_argument('--lagini', type=str, default='particle', help='粒子位置,*.dat')
+    parser.add_argument('--lagini', type=str, default='particle', help='粒子位置文件名,*.dat')
+    parser.add_argument('--windon', type=str, default='T', help='是否开启风场')
+    parser.add_argument('--dragc', type=str, default='0.005', help='风拖曳系数')
+    parser.add_argument('--rotation_angle', type=str, default='0.000', help='旋转角')
     parser.add_argument('--cart_shp', type=str, default='F', help='坐标系统,T为投影坐标,F为球(经纬度)坐标 (默认:F)')
+    parser.add_argument('--threads', type=str, default='100', help='线程数量,分为多少个子任务运行')
 
     # 解析命令行参数
     args = parser.parse_args()
@@ -82,7 +86,27 @@ if __name__ == "__main__":
             else:
                 logger.error('坐标系选择T/F错误')
                 raise ValueError
+            if args.windon == 'T':
+                data['Lagrangian']['General']['Wind'] = True
+            elif args.windon == 'F':
+                data['Lagrangian']['General']['Wind'] = False
+            else:
+                logger.error('开启/关闭风错误')
+                raise ValueError
+            try:
+                data['Lagrangian']['General']['Dragc'] = float(args.dragc)
+            except ValueError:
+                logger.error('风拖曳系数设置错误')
             fin.close()
+            try:
+                data['Lagrangian']['General']['ROTATE_ANGLE'] = float(args.rotation_angle)
+            except ValueError:
+                logger.error('旋转角设置错误')
+            fin.close()
+            try:
+                data['General']['Threads'] = int(args.threads)
+            except ValueError:
+                logger.error('线程数设置错误')
 
             with open(configfile, 'w', encoding='utf-8') as fout:
                 toml.dump(data, fout)

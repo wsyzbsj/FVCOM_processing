@@ -69,3 +69,14 @@ logger.info('{} Time info: 开始 {};结束 {}'.format(fvcom_file,time_info['sta
 
 主要分为写入namelist、编译、运行三个部分
 
+## 备注
+### 变量重命名
+
+```python
+ncrename -h -O -v wts,omega subei_0001.nc
+```
+### 追加变量
+
+```python
+ncks -A -v a1u subei_0001.nc subei_0005.nc
+```

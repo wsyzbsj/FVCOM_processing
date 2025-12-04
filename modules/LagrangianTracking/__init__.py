@@ -6,21 +6,26 @@ from ..Log import AppLogger
 import subprocess
 import threading
 import re
-
+import numpy as np
 
 class LagrangianTracking_FVCOMOffline:
     def __init__(self, configfile: str):
+        self.total_progress = 0.0
         self.configfile = toml.load(configfile)
         # 创建日志
         self.logger = AppLogger('LagrangianTracking(FVCOM_offline)', self.configfile['Log']['Level'], pathlib.Path(self.configfile['Log']['File']))
+        # 总线程数
+        self.thread_nums = int(self.configfile['General']['Threads'])
 
         # 读取粒子追踪设置
-        self.logger.info('注:离线追踪目前至多支持1100个粒子')
         self.logger.info('开始 - 读取FVCOM离线拉格朗日追踪配置')
         self.inverse = self.configfile['Lagrangian']['General']['Inverse']
         self.directory = self.configfile['Lagrangian']['General']['Directory']
         self.casename = self.configfile['Lagrangian']['General']['CaseName']
         self.sourcepath = self.configfile['Lagrangian']['General']['SourcePath']
+        self.wind = self.configfile['Lagrangian']['General']['Wind']
+        self.dragc = self.configfile['Lagrangian']['General']['Dragc']
+        self.rotate_angle = self.configfile['Lagrangian']['General']['ROTATE_ANGLE']
         # namelist所有设置
         self.dti = self.configfile['Lagrangian']['TimeIntegration']['DTI']
         self.instp = self.configfile['Lagrangian']['TimeIntegration']['INSTP']
@@ -49,6 +54,8 @@ class LagrangianTracking_FVCOMOffline:
         self.nml_writer()
         # 编译适合的程序
         self.compile_ptraj()
+        # 拆分算例
+        self.particle_spliter()
         # 运行
         self.lag_run()
 
@@ -103,6 +110,8 @@ class LagrangianTracking_FVCOMOffline:
             else:
                 f.write(f"CART_SHP = F\n")
             f.write(f"PROJECTION_REFERENCE = \'{self.projection_reference}\'\n")
+            f.write(f"DRAG_C={self.dragc}\n")
+            f.write(f"ROTATE_ANGLE={self.rotate_angle}\n")
             f.close()
 
         self.logger.info(f"结束 - 离线拉格朗日追踪的namelist文件已写入: {nml_file}")
@@ -159,73 +168,60 @@ class LagrangianTracking_FVCOMOffline:
         self.logger.info('结束 - 修改ptraj的makefile(追踪/追溯)')
         self.logger.info('结束 - 修改ptraj的makefile(全部)')
         self.logger.info('开始 - 编译ptraj可执行文件')
-        os.system('source /usr/share/Modules/init/bash && module use /home/yzbsj/modulefiles && module load apps/netcdf-fortran/4.6.2 && make')
+        os.system('make')
         self.logger.info('结束 - 编译ptraj可执行文件')
 
     def lag_run(self):
-        self.logger.info('开始 - 运行追踪程序')
-        self.logger.info('更改当前目录至:{},以运行离线粒子追踪'.format(self.directory))
+        self.logger.info('开始 - 并行运行追踪程序')
+        self.logger.info(f'更改当前目录至:{self.directory}, 以运行离线粒子追踪')
         os.chdir(self.directory)
-        compiled_excutable_file = os.path.join(self.sourcepath, 'ptraj')
+        compiled_executable_file = os.path.join(self.sourcepath, 'ptraj')
         destination_path = os.path.join(self.directory, 'ptraj')
-        os.remove(destination_path)
-        os.symlink(compiled_excutable_file, destination_path)           # 链接至编译的可执行文件
 
-        # 定义进度跟踪变量
-        self.current_progress = 0
-        self.total_hours = None
-        self.current_hours = 0
+        if os.path.exists(destination_path):
+            os.remove(destination_path)
+        os.symlink(compiled_executable_file, destination_path)
+
+        # -------------------------
+        # 新增：并行运行多个算例
+        # -------------------------
+        num_threads = self.thread_nums
+        self.logger.info(f"共检测到 {num_threads} 个算例，将并行运行。")
+
+        # 各线程的当前进度（百分比）
+        progress_list = [0.0 for _ in range(num_threads)]
+
+        # 定义锁以防止多线程竞争
+        progress_lock = threading.Lock()
+
+        # 正则表达式模式复用
+        pattern = re.compile(r'\s*(\d+)\s*/\s*(\d+)\s*finished\s*\(hours\)')
 
         def parse_progress(line):
-            """解析进度信息并返回百分比"""
-            # 使用正则表达式匹配进度格式：数字 / 数字 finished (hours)
-            pattern = r'\s*(\d+)\s*/\s*(\d+)\s*finished\s*\(hours\)'
-            match = re.search(pattern, line)
-
+            match = pattern.search(line)
             if match:
                 current = int(match.group(1))
                 total = int(match.group(2))
-
-                # 更新总时次数（只更新一次）
-                if self.total_hours is None:
-                    self.total_hours = total
-                    self.logger.info(f"检测到总时次数: {total}")
-
-                # 计算百分比
                 if total > 0:
-                    progress_percent = (current / total) * 100
-                    return progress_percent, current, total
+                    return (current / total) * 100
+            return None
 
-            return None, None, None
-
-        def handle_output(line):
-            """处理输出的回调函数"""
+        def handle_output(idx, line):
+            """处理子进程输出并更新对应线程的进度"""
             line = line.strip()
-
-            # 记录所有输出
-            self.logger.info(f"程序输出: {line}")
-
-            # 尝试解析进度信息
-            progress_percent, current, total = parse_progress(line)
-
+            self.logger.info(f"[{idx:02d}] 输出: {line}")
+            progress_percent = parse_progress(line)
             if progress_percent is not None:
-                # 只有当进度有显著变化时才记录（避免过于频繁的记录）
-                if abs(progress_percent - self.current_progress) >= 0.1:  # 至少1%的变化
-                    self.current_progress = progress_percent
-                    self.current_hours = current
+                with progress_lock:
+                    progress_list[idx] = progress_percent
+                    self.total_progress = sum(progress_list) / num_threads
+                self.logger.info(f"[{idx:02d}] 当前进度: {progress_percent:.1f}%，总体进度: {self.total_progress:.1f}%")
 
-                    self.logger.info(f"粒子追踪进度: {progress_percent:.1f}%")
-
-                    # 这里可以添加其他进度处理逻辑
-                    # 例如：更新GUI进度条、发送进度通知等
-
-                    # 如果进度达到100%，记录完成
-                    if progress_percent >= 100:
-                        self.logger.info("粒子追踪已完成!")
-
-        try:
-            command = ['./ptraj', self.casename]
-            self.logger.info(f"执行命令: {' '.join(command)}")
+        def run_case(idx):
+            """运行单个粒子追踪算例"""
+            case_name = f"{self.casename}_{idx:03d}"
+            command = ['./ptraj', case_name]
+            self.logger.info(f"[{idx:02d}] 启动命令: {' '.join(command)}")
 
             process = subprocess.Popen(
                 command,
@@ -237,15 +233,91 @@ class LagrangianTracking_FVCOMOffline:
                 errors='replace'
             )
 
-            # 同步读取输出
             for line in iter(process.stdout.readline, ''):
-                handle_output(line)
+                handle_output(idx, line)
 
-            # 等待进程完成
             process.wait()
+            self.logger.info(f"[{idx:02d}] 进程结束")
 
-        except Exception as e:
-            self.logger.error(f"运行粒子追踪程序时发生错误: {e}")
-            raise
+        # -------------------------
+        # 启动所有线程
+        # -------------------------
+        threads = []
+        for i in range(num_threads):
+            t = threading.Thread(target=run_case, args=(i,))
+            threads.append(t)
+            t.start()
 
-        self.logger.info('结束 - 运行追踪程序')
+        # -------------------------
+        # 等待所有线程结束
+        # -------------------------
+        for t in threads:
+            t.join()
+
+        self.logger.info("全部粒子追踪算例运行完毕！")
+
+    def particle_spliter(self):
+        current_dir = os.getcwd()
+        os.chdir(os.path.join(self.directory,self.inpdir))
+        # 读取粒子
+        self.particles = np.loadtxt('particles.dat', skiprows=1, dtype=float, usecols=[1,2])
+        num_particles_all = self.particles.shape[0]
+        if num_particles_all < self.thread_nums:
+            print(f"警告:  总粒子数 ({num_particles_all}) 小于总线程数 ({self.thread_nums})")
+        num_shouldbe = num_particles_all//self.thread_nums              # 最少每个有多少 +1为其他
+        num_error = num_particles_all - num_shouldbe*self.thread_nums   # 多少个+1
+        j_all = 0
+        for i in range(self.thread_nums):
+            with open(f"{self.casename}_{i:03d}.dat", 'w') as fout:
+                if i < num_error:                                       # 未达到组数,为n+1个
+                    j_max = num_shouldbe+1
+                else:                                                   # 达到组数,为n个
+                    j_max = num_shouldbe
+                    if j_max == 0:                                      # 不足每线程一个粒子则停止
+                        break
+                # 处理nml文件
+                os.system(f'cp ../{self.casename}_run.dat ../{self.casename}_{i:3d}_run.dat')
+                with open ('../{self.casename}_{i:3d}_run.dat') as f_nml:
+                    lines = f_nml.readlines()
+                    for i_line,line in enumerate(lines):
+                        if 'LAGINI =' in line:
+                            lines[i_line] = line.rstrip()+f'_{i:3d}\n'
+                    f_nml.writelines(lines)
+                # 开始写入粒子文件
+                fout.write(str(j_max)+'\n')
+                for j in range(j_max):
+                    fout.write(f'{j+1:3d} {self.particles[j_all,0]:10.6f} {self.particles[j_all,1]:10.7f} 0.000\n')
+                    j_all += 1
+            # 写入运行脚本
+            with open('pbs{:03d}_'.format(i-1)+str(self.configfile['Lagrangian']['General']['Dragc']), 'w') as fout:
+                fout.write("""#!/bin/bash
+#SBATCH --job-name="{:03d}_""".format(i-1)+str(self.configfile['Lagrangian']['General']['Dragc'])+""""
+#SBATCH --partition="cpu"
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 144:00:00
+#SBATCH --output={:03d}_""".format(i-1)+str(self.configfile['Lagrangian']['General']['Dragc'])+""".log
+#SBATCH --error={:03d}_""".format(i-1)+str(self.configfile['Lagrangian']['General']['Dragc'])+""".error
+
+
+###以上部分说明：###
+####第一段部分，后面不可以有注释，不可以有空格！！！！！
+#SBATCH 
+#SBATCH -t 144:00:00                            ###作业强制终止时间.可自定义时长。格式为“小时：分钟：秒”
+
+echo "SLURM_JOBID= "$SLURM_JOBID
+echo "SLURM_JOB_NODELIST= "$SLURM_JOB_NODELIST
+echo "SLURM_NNODES= "$SLURM_NNODES
+echo "SLURMTMPDIR= "$SLURMTMPDIR
+echo "working directory= "$SLURM_SUBMIT_DIR
+
+NPROCS=`srun --nodes=${SLURM_NNODES} bash -c 'hostname' | wc -l`
+echo "Number of Processors = "$NPROCS
+
+module use /public/software/modulefiles
+module purge
+module load netcdf-fortran/4.6.2
+./ptraj_inverse_"""+str(self.configfile['Lagrangian']['General']['Dragc'])+""" Jun_2025_{:03d}_""".format(i-1)+str(self.configfile['Lagrangian']['General']['Dragc']))
+        shutil.rmtree(f"{self.lagini}_run.dat")
+        shutil.rmtree(f"../{self.casename}_run.dat")
+        os.chdir(current_dir)

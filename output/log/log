@@ -1,906 +1,426 @@
-2025-10-17 11:43:41,061 - FVCOM_Reader - INFO : 添加文件日志处理程序: /home/yzbsj/Code/pycharm/FVCOM_processing/output/log/log
-2025-10-17 11:43:41,061 - FVCOM_Reader - INFO : Found FVCOM output files: ['/home/yzbsj/FVCOM_lag/INPDIR/2025/subei_0001.nc']
-2025-10-17 11:43:41,062 - FVCOM_Reader - INFO : /home/yzbsj/FVCOM_lag/INPDIR/2025/subei_0001.nc Opened
-2025-10-17 11:43:41,086 - FVCOM_Reader - INFO : /home/yzbsj/FVCOM_lag/INPDIR/2025/subei_0001.nc Time info: 开始 2025-04-02 00:00:00;结束 2025-04-03 23:50:00
-2025-10-17 11:43:41,086 - FVCOM_Reader - INFO : /home/yzbsj/FVCOM_lag/INPDIR/2025/subei_0001.nc Closed
-2025-10-17 11:43:41,087 - FVCOM_Reader - INFO : FVCOM 输出文件的时间: 2025-04-02 00:00:00 至 2025-04-03 23:50:00, 时间步长为600.0秒
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 添加文件日志处理程序: /home/yzbsj/Code/pycharm/FVCOM_processing/output/log/log
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 注:离线追踪目前至多支持1100个粒子
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 读取FVCOM离线拉格朗日追踪配置
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 读取FVCOM离线拉格朗日追踪配置
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 离线拉格朗日追踪的namelist文件已写入: {nml_file}
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 离线拉格朗日追踪的namelist文件已写入: /home/yzbsj/FVCOM_lag/tst_new_run.dat
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至拉格朗日追踪源代码目录:/home/yzbsj/下载/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/
-2025-10-17 11:43:41,088 - LagrangianTracking(FVCOM_offline) - INFO : 进行make clean
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 修改ptraj的makefile
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择球面(经纬度)/投影坐标系
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:球面(经纬度)坐标系
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择球面(经纬度)/投影坐标系
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择追踪或追溯
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:追踪
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择追踪或追溯
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 更新makefile(追踪/追溯)
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(追踪/追溯)
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(全部)
-2025-10-17 11:43:41,090 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 编译ptraj可执行文件
-2025-10-17 11:43:43,485 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 编译ptraj可执行文件
-2025-10-17 11:43:43,485 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 运行追踪程序
-2025-10-17 11:43:43,485 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至:/home/yzbsj/FVCOM_lag,以运行离线粒子追踪
-2025-10-17 11:43:43,485 - LagrangianTracking(FVCOM_offline) - INFO : 执行命令: ./ptraj tst_new
-2025-10-17 11:43:43,489 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 2460768
-2025-10-17 11:43:43,491 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF NODES            :      116810
-2025-10-17 11:43:43,492 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF ELEMENTS         :      229847
-2025-10-17 11:43:43,492 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF SIGMA LAYERS     :          21
-2025-10-17 11:43:43,492 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 
-2025-10-17 11:43:43,492 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !      MESH READING      :    FINISHED
-2025-10-17 11:43:43,590 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  GRID METRICS READING  :    FINISHED
-2025-10-17 11:44:07,116 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  SET DOMAIN            :    COMPLETED
-2025-10-17 12:06:41,017 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 2460768           1
-2025-10-17 12:06:41,018 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 0001                                                                                                           1
-2025-10-17 12:06:41,018 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,018 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: trying reading Times:./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,019 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: Time found           0 in./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,019 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !                LAGRANGIAN TRACKING INFO
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # LAG POINTS          :      605000
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # LAG START ITERATION :           0
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # LAG END ITERATION :         282
-2025-10-17 12:06:41,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # PTS OUTSIDE DOMAIN  :      603900
-2025-10-17 12:06:41,162 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,163 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: trying reading Times:./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,163 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: Time found           0 in./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,163 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc
-2025-10-17 12:06:41,228 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: INVERSE=0
-2025-10-17 12:06:41,234 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 0 /         282 finished (hours)        1100
-2025-10-17 12:06:41,234 - LagrangianTracking(FVCOM_offline) - INFO : 检测到总时次数: 282
-2025-10-17 12:06:41,299 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           1
-2025-10-17 12:06:43,498 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 1 /         282 finished (hours)        1100
-2025-10-17 12:06:43,498 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 0.4%
-2025-10-17 12:06:43,559 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           2
-2025-10-17 12:06:45,746 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 2 /         282 finished (hours)        1100
-2025-10-17 12:06:45,747 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 0.7%
-2025-10-17 12:06:45,807 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           3
-2025-10-17 12:06:47,992 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 3 /         282 finished (hours)        1100
-2025-10-17 12:06:47,993 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 1.1%
-2025-10-17 12:06:48,053 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           4
-2025-10-17 12:06:50,237 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 4 /         282 finished (hours)        1100
-2025-10-17 12:06:50,237 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 1.4%
-2025-10-17 12:06:50,297 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           5
-2025-10-17 12:06:52,483 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 5 /         282 finished (hours)        1100
-2025-10-17 12:06:52,483 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 1.8%
-2025-10-17 12:06:52,544 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           6
-2025-10-17 12:06:54,768 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 6 /         282 finished (hours)        1100
-2025-10-17 12:06:54,768 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 2.1%
-2025-10-17 12:06:54,828 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           7
-2025-10-17 12:06:57,013 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 7 /         282 finished (hours)        1100
-2025-10-17 12:06:57,013 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 2.5%
-2025-10-17 12:06:57,073 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           8
-2025-10-17 12:06:59,265 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 8 /         282 finished (hours)        1100
-2025-10-17 12:06:59,265 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 2.8%
-2025-10-17 12:06:59,325 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc           9
-2025-10-17 12:07:01,512 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 9 /         282 finished (hours)        1100
-2025-10-17 12:07:01,512 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 3.2%
-2025-10-17 12:07:01,573 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          10
-2025-10-17 12:07:03,761 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 10 /         282 finished (hours)        1100
-2025-10-17 12:07:03,761 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 3.5%
-2025-10-17 12:07:03,822 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          11
-2025-10-17 12:07:06,016 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 11 /         282 finished (hours)        1100
-2025-10-17 12:07:06,016 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 3.9%
-2025-10-17 12:07:06,076 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          12
-2025-10-17 12:07:08,311 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 12 /         282 finished (hours)        1100
-2025-10-17 12:07:08,311 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 4.3%
-2025-10-17 12:07:08,371 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          13
-2025-10-17 12:07:10,559 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 13 /         282 finished (hours)        1100
-2025-10-17 12:07:10,559 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 4.6%
-2025-10-17 12:07:10,619 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          14
-2025-10-17 12:07:12,807 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 14 /         282 finished (hours)        1100
-2025-10-17 12:07:12,807 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 5.0%
-2025-10-17 12:07:12,867 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          15
-2025-10-17 12:07:15,055 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 15 /         282 finished (hours)        1100
-2025-10-17 12:07:15,055 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 5.3%
-2025-10-17 12:07:15,115 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          16
-2025-10-17 12:07:17,302 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 16 /         282 finished (hours)        1100
-2025-10-17 12:07:17,302 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 5.7%
-2025-10-17 12:07:17,363 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          17
-2025-10-17 12:07:19,558 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 17 /         282 finished (hours)        1100
-2025-10-17 12:07:19,558 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 6.0%
-2025-10-17 12:07:19,618 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          18
-2025-10-17 12:07:21,841 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 18 /         282 finished (hours)        1100
-2025-10-17 12:07:21,841 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 6.4%
-2025-10-17 12:07:21,902 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          19
-2025-10-17 12:07:24,098 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 19 /         282 finished (hours)        1100
-2025-10-17 12:07:24,098 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 6.7%
-2025-10-17 12:07:24,158 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          20
-2025-10-17 12:07:26,348 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 20 /         282 finished (hours)        1100
-2025-10-17 12:07:26,348 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 7.1%
-2025-10-17 12:07:26,408 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          21
-2025-10-17 12:07:28,598 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 21 /         282 finished (hours)        1100
-2025-10-17 12:07:28,598 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 7.4%
-2025-10-17 12:07:28,659 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          22
-2025-10-17 12:07:30,851 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 22 /         282 finished (hours)        1100
-2025-10-17 12:07:30,851 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 7.8%
-2025-10-17 12:07:30,911 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          23
-2025-10-17 12:07:33,106 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 23 /         282 finished (hours)        1100
-2025-10-17 12:07:33,107 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 8.2%
-2025-10-17 12:07:33,166 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          24
-2025-10-17 12:07:35,394 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 24 /         282 finished (hours)        1100
-2025-10-17 12:07:35,395 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 8.5%
-2025-10-17 12:07:35,455 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          25
-2025-10-17 12:07:37,647 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 25 /         282 finished (hours)        1100
-2025-10-17 12:07:37,647 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 8.9%
-2025-10-17 12:07:37,707 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          26
-2025-10-17 12:07:39,898 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 26 /         282 finished (hours)        1100
-2025-10-17 12:07:39,898 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 9.2%
-2025-10-17 12:07:39,958 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          27
-2025-10-17 12:07:42,147 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 27 /         282 finished (hours)        1100
-2025-10-17 12:07:42,147 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 9.6%
-2025-10-17 12:07:42,208 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          28
-2025-10-17 12:07:44,397 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 28 /         282 finished (hours)        1100
-2025-10-17 12:07:44,398 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 9.9%
-2025-10-17 12:07:44,458 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          29
-2025-10-17 12:07:46,646 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 29 /         282 finished (hours)        1100
-2025-10-17 12:07:46,647 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 10.3%
-2025-10-17 12:07:46,707 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          30
-2025-10-17 12:07:48,931 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 30 /         282 finished (hours)        1100
-2025-10-17 12:07:48,931 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 10.6%
-2025-10-17 12:07:48,991 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          31
-2025-10-17 12:07:51,182 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 31 /         282 finished (hours)        1100
-2025-10-17 12:07:51,182 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 11.0%
-2025-10-17 12:07:51,243 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          32
-2025-10-17 12:07:53,430 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 32 /         282 finished (hours)        1100
-2025-10-17 12:07:53,430 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 11.3%
-2025-10-17 12:07:53,490 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          33
-2025-10-17 12:07:55,681 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 33 /         282 finished (hours)        1100
-2025-10-17 12:07:55,681 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 11.7%
-2025-10-17 12:07:55,741 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          34
-2025-10-17 12:07:57,937 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 34 /         282 finished (hours)        1100
-2025-10-17 12:07:57,938 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 12.1%
-2025-10-17 12:07:57,998 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          35
-2025-10-17 12:08:00,187 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 35 /         282 finished (hours)        1100
-2025-10-17 12:08:00,187 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 12.4%
-2025-10-17 12:08:00,247 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          36
-2025-10-17 12:08:02,471 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 36 /         282 finished (hours)        1100
-2025-10-17 12:08:02,471 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 12.8%
-2025-10-17 12:08:02,531 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          37
-2025-10-17 12:08:04,723 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 37 /         282 finished (hours)        1100
-2025-10-17 12:08:04,723 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 13.1%
-2025-10-17 12:08:04,783 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          38
-2025-10-17 12:08:06,971 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 38 /         282 finished (hours)        1100
-2025-10-17 12:08:06,971 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 13.5%
-2025-10-17 12:08:07,031 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          39
-2025-10-17 12:08:09,219 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 39 /         282 finished (hours)        1100
-2025-10-17 12:08:09,219 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 13.8%
-2025-10-17 12:08:09,280 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          40
-2025-10-17 12:08:11,473 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 40 /         282 finished (hours)        1100
-2025-10-17 12:08:11,473 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 14.2%
-2025-10-17 12:08:11,534 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          41
-2025-10-17 12:08:13,726 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 41 /         282 finished (hours)        1100
-2025-10-17 12:08:13,726 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 14.5%
-2025-10-17 12:08:13,786 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          42
-2025-10-17 12:08:16,014 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 42 /         282 finished (hours)        1100
-2025-10-17 12:08:16,014 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 14.9%
-2025-10-17 12:08:16,075 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          43
-2025-10-17 12:08:18,263 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 43 /         282 finished (hours)        1100
-2025-10-17 12:08:18,263 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 15.2%
-2025-10-17 12:08:18,323 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          44
-2025-10-17 12:08:20,512 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 44 /         282 finished (hours)        1100
-2025-10-17 12:08:20,512 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 15.6%
-2025-10-17 12:08:20,572 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          45
-2025-10-17 12:08:22,766 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 45 /         282 finished (hours)        1100
-2025-10-17 12:08:22,767 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 16.0%
-2025-10-17 12:08:22,827 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          46
-2025-10-17 12:08:25,017 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 46 /         282 finished (hours)        1100
-2025-10-17 12:08:25,017 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 16.3%
-2025-10-17 12:08:25,077 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          47
-2025-10-17 12:08:27,266 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 47 /         282 finished (hours)        1100
-2025-10-17 12:08:27,266 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 16.7%
-2025-10-17 12:08:27,326 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          48
-2025-10-17 12:08:29,549 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 48 /         282 finished (hours)        1100
-2025-10-17 12:08:29,550 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 17.0%
-2025-10-17 12:08:29,610 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          49
-2025-10-17 12:08:31,797 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 49 /         282 finished (hours)        1100
-2025-10-17 12:08:31,797 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 17.4%
-2025-10-17 12:08:31,857 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          50
-2025-10-17 12:08:34,045 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 50 /         282 finished (hours)        1100
-2025-10-17 12:08:34,045 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 17.7%
-2025-10-17 12:08:34,104 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          51
-2025-10-17 12:08:36,294 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 51 /         282 finished (hours)        1100
-2025-10-17 12:08:36,295 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 18.1%
-2025-10-17 12:08:36,355 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          52
-2025-10-17 12:08:38,542 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 52 /         282 finished (hours)        1100
-2025-10-17 12:08:38,542 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 18.4%
-2025-10-17 12:08:38,603 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          53
-2025-10-17 12:08:40,790 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 53 /         282 finished (hours)        1100
-2025-10-17 12:08:40,790 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 18.8%
-2025-10-17 12:08:40,851 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          54
-2025-10-17 12:08:43,076 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 54 /         282 finished (hours)        1100
-2025-10-17 12:08:43,076 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 19.1%
-2025-10-17 12:08:43,136 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          55
-2025-10-17 12:08:45,323 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 55 /         282 finished (hours)        1100
-2025-10-17 12:08:45,324 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 19.5%
-2025-10-17 12:08:45,384 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          56
-2025-10-17 12:08:47,571 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 56 /         282 finished (hours)        1100
-2025-10-17 12:08:47,571 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 19.9%
-2025-10-17 12:08:47,631 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          57
-2025-10-17 12:08:49,817 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 57 /         282 finished (hours)        1100
-2025-10-17 12:08:49,817 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 20.2%
-2025-10-17 12:08:49,877 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          58
-2025-10-17 12:08:52,068 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 58 /         282 finished (hours)        1100
-2025-10-17 12:08:52,069 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 20.6%
-2025-10-17 12:08:52,129 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          59
-2025-10-17 12:08:54,317 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 59 /         282 finished (hours)        1100
-2025-10-17 12:08:54,317 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 20.9%
-2025-10-17 12:08:54,378 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          60
-2025-10-17 12:08:56,607 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 60 /         282 finished (hours)        1100
-2025-10-17 12:08:56,607 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 21.3%
-2025-10-17 12:08:56,667 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          61
-2025-10-17 12:08:58,858 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 61 /         282 finished (hours)        1100
-2025-10-17 12:08:58,858 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 21.6%
-2025-10-17 12:08:58,919 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          62
-2025-10-17 12:09:01,112 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 62 /         282 finished (hours)        1100
-2025-10-17 12:09:01,112 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 22.0%
-2025-10-17 12:09:01,173 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          63
-2025-10-17 12:09:03,370 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 63 /         282 finished (hours)        1100
-2025-10-17 12:09:03,370 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 22.3%
-2025-10-17 12:09:03,430 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          64
-2025-10-17 12:09:05,618 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 64 /         282 finished (hours)        1100
-2025-10-17 12:09:05,618 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 22.7%
-2025-10-17 12:09:05,679 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          65
-2025-10-17 12:09:07,898 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 65 /         282 finished (hours)        1100
-2025-10-17 12:09:07,898 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 23.0%
-2025-10-17 12:09:07,959 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          66
-2025-10-17 12:09:10,259 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 66 /         282 finished (hours)        1100
-2025-10-17 12:09:10,259 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 23.4%
-2025-10-17 12:09:10,321 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          67
-2025-10-17 12:09:12,580 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 67 /         282 finished (hours)        1100
-2025-10-17 12:09:12,580 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 23.8%
-2025-10-17 12:09:12,642 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          68
-2025-10-17 12:09:14,877 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 68 /         282 finished (hours)        1100
-2025-10-17 12:09:14,877 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 24.1%
-2025-10-17 12:09:14,938 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          69
-2025-10-17 12:09:17,248 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 69 /         282 finished (hours)        1100
-2025-10-17 12:09:17,248 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 24.5%
-2025-10-17 12:09:17,311 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          70
-2025-10-17 12:09:19,599 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 70 /         282 finished (hours)        1100
-2025-10-17 12:09:19,599 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 24.8%
-2025-10-17 12:09:19,660 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          71
-2025-10-17 12:09:21,906 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 71 /         282 finished (hours)        1100
-2025-10-17 12:09:21,907 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 25.2%
-2025-10-17 12:09:21,968 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          72
-2025-10-17 12:09:24,250 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 72 /         282 finished (hours)        1100
-2025-10-17 12:09:24,250 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 25.5%
-2025-10-17 12:09:24,312 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          73
-2025-10-17 12:09:26,571 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 73 /         282 finished (hours)        1100
-2025-10-17 12:09:26,571 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 25.9%
-2025-10-17 12:09:26,632 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          74
-2025-10-17 12:09:28,880 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 74 /         282 finished (hours)        1100
-2025-10-17 12:09:28,880 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 26.2%
-2025-10-17 12:09:28,942 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          75
-2025-10-17 12:09:31,204 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 75 /         282 finished (hours)        1100
-2025-10-17 12:09:31,204 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 26.6%
-2025-10-17 12:09:31,265 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          76
-2025-10-17 12:09:33,526 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 76 /         282 finished (hours)        1100
-2025-10-17 12:09:33,526 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 27.0%
-2025-10-17 12:09:33,587 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          77
-2025-10-17 12:09:35,841 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 77 /         282 finished (hours)        1100
-2025-10-17 12:09:35,841 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 27.3%
-2025-10-17 12:09:35,908 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          78
-2025-10-17 12:09:38,143 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 78 /         282 finished (hours)        1100
-2025-10-17 12:09:38,143 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 27.7%
-2025-10-17 12:09:38,203 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          79
-2025-10-17 12:09:40,395 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 79 /         282 finished (hours)        1100
-2025-10-17 12:09:40,395 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 28.0%
-2025-10-17 12:09:40,455 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          80
-2025-10-17 12:09:42,655 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 80 /         282 finished (hours)        1100
-2025-10-17 12:09:42,655 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 28.4%
-2025-10-17 12:09:42,715 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          81
-2025-10-17 12:09:44,910 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 81 /         282 finished (hours)        1100
-2025-10-17 12:09:44,910 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 28.7%
-2025-10-17 12:09:44,970 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          82
-2025-10-17 12:09:47,158 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 82 /         282 finished (hours)        1100
-2025-10-17 12:09:47,158 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 29.1%
-2025-10-17 12:09:47,219 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          83
-2025-10-17 12:09:49,438 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 83 /         282 finished (hours)        1100
-2025-10-17 12:09:49,439 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 29.4%
-2025-10-17 12:09:49,500 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          84
-2025-10-17 12:09:51,787 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 84 /         282 finished (hours)        1100
-2025-10-17 12:09:51,787 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 29.8%
-2025-10-17 12:09:51,849 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          85
-2025-10-17 12:09:54,105 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 85 /         282 finished (hours)        1100
-2025-10-17 12:09:54,105 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 30.1%
-2025-10-17 12:09:54,167 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          86
-2025-10-17 12:09:56,425 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 86 /         282 finished (hours)        1100
-2025-10-17 12:09:56,425 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 30.5%
-2025-10-17 12:09:56,487 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          87
-2025-10-17 12:09:58,738 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 87 /         282 finished (hours)        1100
-2025-10-17 12:09:58,739 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 30.9%
-2025-10-17 12:09:58,801 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          88
-2025-10-17 12:10:01,047 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 88 /         282 finished (hours)        1100
-2025-10-17 12:10:01,048 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 31.2%
-2025-10-17 12:10:01,109 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          89
-2025-10-17 12:10:03,357 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 89 /         282 finished (hours)        1100
-2025-10-17 12:10:03,358 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 31.6%
-2025-10-17 12:10:03,420 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          90
-2025-10-17 12:10:05,724 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 90 /         282 finished (hours)        1100
-2025-10-17 12:10:05,724 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 31.9%
-2025-10-17 12:10:05,785 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          91
-2025-10-17 12:10:08,040 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 91 /         282 finished (hours)        1100
-2025-10-17 12:10:08,040 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 32.3%
-2025-10-17 12:10:08,102 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          92
-2025-10-17 12:10:10,350 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 92 /         282 finished (hours)        1100
-2025-10-17 12:10:10,350 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 32.6%
-2025-10-17 12:10:10,412 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          93
-2025-10-17 12:10:12,681 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 93 /         282 finished (hours)        1100
-2025-10-17 12:10:12,681 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 33.0%
-2025-10-17 12:10:12,745 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          94
-2025-10-17 12:10:15,001 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 94 /         282 finished (hours)        1100
-2025-10-17 12:10:15,001 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 33.3%
-2025-10-17 12:10:15,067 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          95
-2025-10-17 12:10:17,356 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 95 /         282 finished (hours)        1100
-2025-10-17 12:10:17,356 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 33.7%
-2025-10-17 12:10:17,418 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          96
-2025-10-17 12:10:19,723 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 96 /         282 finished (hours)        1100
-2025-10-17 12:10:19,723 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 34.0%
-2025-10-17 12:10:19,785 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          97
-2025-10-17 12:10:22,042 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 97 /         282 finished (hours)        1100
-2025-10-17 12:10:22,042 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 34.4%
-2025-10-17 12:10:22,105 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          98
-2025-10-17 12:10:24,391 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 98 /         282 finished (hours)        1100
-2025-10-17 12:10:24,391 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 34.8%
-2025-10-17 12:10:24,453 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc          99
-2025-10-17 12:10:26,692 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 99 /         282 finished (hours)        1100
-2025-10-17 12:10:26,693 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 35.1%
-2025-10-17 12:10:26,753 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         100
-2025-10-17 12:10:28,989 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 100 /         282 finished (hours)        1100
-2025-10-17 12:10:28,989 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 35.5%
-2025-10-17 12:10:29,050 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         101
-2025-10-17 12:10:31,249 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 101 /         282 finished (hours)        1100
-2025-10-17 12:10:31,249 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 35.8%
-2025-10-17 12:10:31,310 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         102
-2025-10-17 12:10:33,535 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 102 /         282 finished (hours)        1100
-2025-10-17 12:10:33,536 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 36.2%
-2025-10-17 12:10:33,596 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         103
-2025-10-17 12:10:35,782 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 103 /         282 finished (hours)        1100
-2025-10-17 12:10:35,782 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 36.5%
-2025-10-17 12:10:35,842 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         104
-2025-10-17 12:10:38,031 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 104 /         282 finished (hours)        1100
-2025-10-17 12:10:38,031 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 36.9%
-2025-10-17 12:10:38,091 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         105
-2025-10-17 12:10:40,281 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 105 /         282 finished (hours)        1100
-2025-10-17 12:10:40,281 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 37.2%
-2025-10-17 12:10:40,341 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         106
-2025-10-17 12:10:42,530 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 106 /         282 finished (hours)        1100
-2025-10-17 12:10:42,530 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 37.6%
-2025-10-17 12:10:42,590 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         107
-2025-10-17 12:10:44,778 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 107 /         282 finished (hours)        1100
-2025-10-17 12:10:44,778 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 37.9%
-2025-10-17 12:10:44,838 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         108
-2025-10-17 12:10:47,061 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 108 /         282 finished (hours)        1100
-2025-10-17 12:10:47,061 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 38.3%
-2025-10-17 12:10:47,120 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         109
-2025-10-17 12:10:49,309 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 109 /         282 finished (hours)        1100
-2025-10-17 12:10:49,309 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 38.7%
-2025-10-17 12:10:49,369 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         110
-2025-10-17 12:10:51,557 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 110 /         282 finished (hours)        1100
-2025-10-17 12:10:51,557 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 39.0%
-2025-10-17 12:10:51,617 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         111
-2025-10-17 12:10:53,806 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 111 /         282 finished (hours)        1100
-2025-10-17 12:10:53,806 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 39.4%
-2025-10-17 12:10:53,867 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         112
-2025-10-17 12:10:56,119 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 112 /         282 finished (hours)        1100
-2025-10-17 12:10:56,119 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 39.7%
-2025-10-17 12:10:56,181 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         113
-2025-10-17 12:10:58,430 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 113 /         282 finished (hours)        1100
-2025-10-17 12:10:58,431 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 40.1%
-2025-10-17 12:10:58,492 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         114
-2025-10-17 12:11:00,802 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 114 /         282 finished (hours)        1100
-2025-10-17 12:11:00,802 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 40.4%
-2025-10-17 12:11:00,866 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         115
-2025-10-17 12:11:03,119 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 115 /         282 finished (hours)        1100
-2025-10-17 12:11:03,119 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 40.8%
-2025-10-17 12:11:03,181 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         116
-2025-10-17 12:11:05,428 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 116 /         282 finished (hours)        1100
-2025-10-17 12:11:05,428 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 41.1%
-2025-10-17 12:11:05,490 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         117
-2025-10-17 12:11:07,737 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 117 /         282 finished (hours)        1100
-2025-10-17 12:11:07,737 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 41.5%
-2025-10-17 12:11:07,799 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         118
-2025-10-17 12:11:10,044 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 118 /         282 finished (hours)        1100
-2025-10-17 12:11:10,044 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 41.8%
-2025-10-17 12:11:10,105 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         119
-2025-10-17 12:11:12,364 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 119 /         282 finished (hours)        1100
-2025-10-17 12:11:12,364 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 42.2%
-2025-10-17 12:11:12,426 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         120
-2025-10-17 12:11:14,710 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 120 /         282 finished (hours)        1100
-2025-10-17 12:11:14,711 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 42.6%
-2025-10-17 12:11:14,772 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         121
-2025-10-17 12:11:17,025 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 121 /         282 finished (hours)        1100
-2025-10-17 12:11:17,025 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 42.9%
-2025-10-17 12:11:17,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         122
-2025-10-17 12:11:19,334 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 122 /         282 finished (hours)        1100
-2025-10-17 12:11:19,335 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 43.3%
-2025-10-17 12:11:19,396 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         123
-2025-10-17 12:11:21,637 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 123 /         282 finished (hours)        1100
-2025-10-17 12:11:21,637 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 43.6%
-2025-10-17 12:11:21,699 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         124
-2025-10-17 12:11:23,949 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 124 /         282 finished (hours)        1100
-2025-10-17 12:11:23,949 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 44.0%
-2025-10-17 12:11:24,010 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         125
-2025-10-17 12:11:26,264 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 125 /         282 finished (hours)        1100
-2025-10-17 12:11:26,264 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 44.3%
-2025-10-17 12:11:26,326 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         126
-2025-10-17 12:11:28,619 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 126 /         282 finished (hours)        1100
-2025-10-17 12:11:28,619 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 44.7%
-2025-10-17 12:11:28,681 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         127
-2025-10-17 12:11:30,931 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 127 /         282 finished (hours)        1100
-2025-10-17 12:11:30,931 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 45.0%
-2025-10-17 12:11:30,993 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         128
-2025-10-17 12:11:33,242 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 128 /         282 finished (hours)        1100
-2025-10-17 12:11:33,242 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 45.4%
-2025-10-17 12:11:33,304 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         129
-2025-10-17 12:11:35,554 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 129 /         282 finished (hours)        1100
-2025-10-17 12:11:35,554 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 45.7%
-2025-10-17 12:11:35,616 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         130
-2025-10-17 12:11:37,865 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 130 /         282 finished (hours)        1100
-2025-10-17 12:11:37,865 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 46.1%
-2025-10-17 12:11:37,928 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         131
-2025-10-17 12:11:40,170 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 131 /         282 finished (hours)        1100
-2025-10-17 12:11:40,170 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 46.5%
-2025-10-17 12:11:40,231 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         132
-2025-10-17 12:11:42,512 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 132 /         282 finished (hours)        1100
-2025-10-17 12:11:42,512 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 46.8%
-2025-10-17 12:11:42,573 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         133
-2025-10-17 12:11:44,830 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 133 /         282 finished (hours)        1100
-2025-10-17 12:11:44,830 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 47.2%
-2025-10-17 12:11:44,892 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         134
-2025-10-17 12:11:47,141 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 134 /         282 finished (hours)        1100
-2025-10-17 12:11:47,141 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 47.5%
-2025-10-17 12:11:47,203 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         135
-2025-10-17 12:11:49,445 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 135 /         282 finished (hours)        1100
-2025-10-17 12:11:49,445 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 47.9%
-2025-10-17 12:11:49,507 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         136
-2025-10-17 12:11:51,749 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 136 /         282 finished (hours)        1100
-2025-10-17 12:11:51,750 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 48.2%
-2025-10-17 12:11:51,812 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         137
-2025-10-17 12:11:54,061 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 137 /         282 finished (hours)        1100
-2025-10-17 12:11:54,061 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 48.6%
-2025-10-17 12:11:54,124 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         138
-2025-10-17 12:11:56,405 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 138 /         282 finished (hours)        1100
-2025-10-17 12:11:56,405 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 48.9%
-2025-10-17 12:11:56,467 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         139
-2025-10-17 12:11:58,710 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 139 /         282 finished (hours)        1100
-2025-10-17 12:11:58,710 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 49.3%
-2025-10-17 12:11:58,772 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         140
-2025-10-17 12:12:01,014 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 140 /         282 finished (hours)        1100
-2025-10-17 12:12:01,014 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 49.6%
-2025-10-17 12:12:01,076 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         141
-2025-10-17 12:12:03,318 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 141 /         282 finished (hours)        1100
-2025-10-17 12:12:03,318 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 50.0%
-2025-10-17 12:12:03,380 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         142
-2025-10-17 12:12:05,622 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 142 /         282 finished (hours)        1100
-2025-10-17 12:12:05,622 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 50.4%
-2025-10-17 12:12:05,684 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         143
-2025-10-17 12:12:07,925 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 143 /         282 finished (hours)        1100
-2025-10-17 12:12:07,925 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 50.7%
-2025-10-17 12:12:07,988 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         144
-2025-10-17 12:12:10,271 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 144 /         282 finished (hours)        1100
-2025-10-17 12:12:10,271 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 51.1%
-2025-10-17 12:12:10,333 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         145
-2025-10-17 12:12:12,581 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 145 /         282 finished (hours)        1100
-2025-10-17 12:12:12,581 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 51.4%
-2025-10-17 12:12:12,644 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         146
-2025-10-17 12:12:14,888 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 146 /         282 finished (hours)        1100
-2025-10-17 12:12:14,889 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 51.8%
-2025-10-17 12:12:14,950 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         147
-2025-10-17 12:12:17,199 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 147 /         282 finished (hours)        1100
-2025-10-17 12:12:17,199 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 52.1%
-2025-10-17 12:12:17,260 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         148
-2025-10-17 12:12:19,501 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 148 /         282 finished (hours)        1100
-2025-10-17 12:12:19,501 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 52.5%
-2025-10-17 12:12:19,563 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         149
-2025-10-17 12:12:21,804 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 149 /         282 finished (hours)        1100
-2025-10-17 12:12:21,805 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 52.8%
-2025-10-17 12:12:21,867 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         150
-2025-10-17 12:12:24,147 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 150 /         282 finished (hours)        1100
-2025-10-17 12:12:24,147 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 53.2%
-2025-10-17 12:12:24,209 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         151
-2025-10-17 12:12:26,451 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 151 /         282 finished (hours)        1100
-2025-10-17 12:12:26,451 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 53.5%
-2025-10-17 12:12:26,513 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         152
-2025-10-17 12:12:28,753 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 152 /         282 finished (hours)        1100
-2025-10-17 12:12:28,754 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 53.9%
-2025-10-17 12:12:28,816 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         153
-2025-10-17 12:12:31,077 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 153 /         282 finished (hours)        1100
-2025-10-17 12:12:31,077 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 54.3%
-2025-10-17 12:12:31,139 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         154
-2025-10-17 12:12:33,393 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 154 /         282 finished (hours)        1100
-2025-10-17 12:12:33,393 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 54.6%
-2025-10-17 12:12:33,455 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         155
-2025-10-17 12:12:35,704 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 155 /         282 finished (hours)        1100
-2025-10-17 12:12:35,704 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 55.0%
-2025-10-17 12:12:35,765 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         156
-2025-10-17 12:12:38,000 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 156 /         282 finished (hours)        1100
-2025-10-17 12:12:38,000 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 55.3%
-2025-10-17 12:12:38,061 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         157
-2025-10-17 12:12:40,300 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 157 /         282 finished (hours)        1100
-2025-10-17 12:12:40,300 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 55.7%
-2025-10-17 12:12:40,362 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         158
-2025-10-17 12:12:42,630 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 158 /         282 finished (hours)        1100
-2025-10-17 12:12:42,630 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 56.0%
-2025-10-17 12:12:42,693 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         159
-2025-10-17 12:12:44,960 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 159 /         282 finished (hours)        1100
-2025-10-17 12:12:44,961 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 56.4%
-2025-10-17 12:12:45,023 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         160
-2025-10-17 12:12:47,287 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 160 /         282 finished (hours)        1100
-2025-10-17 12:12:47,287 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 56.7%
-2025-10-17 12:12:47,349 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         161
-2025-10-17 12:12:49,595 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 161 /         282 finished (hours)        1100
-2025-10-17 12:12:49,595 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 57.1%
-2025-10-17 12:12:49,658 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         162
-2025-10-17 12:12:51,946 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 162 /         282 finished (hours)        1100
-2025-10-17 12:12:51,946 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 57.4%
-2025-10-17 12:12:52,008 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         163
-2025-10-17 12:12:54,248 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 163 /         282 finished (hours)        1100
-2025-10-17 12:12:54,248 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 57.8%
-2025-10-17 12:12:54,309 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         164
-2025-10-17 12:12:56,557 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 164 /         282 finished (hours)        1100
-2025-10-17 12:12:56,557 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 58.2%
-2025-10-17 12:12:56,618 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         165
-2025-10-17 12:12:58,863 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 165 /         282 finished (hours)        1100
-2025-10-17 12:12:58,863 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 58.5%
-2025-10-17 12:12:58,925 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         166
-2025-10-17 12:13:01,168 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 166 /         282 finished (hours)        1100
-2025-10-17 12:13:01,168 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 58.9%
-2025-10-17 12:13:01,230 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         167
-2025-10-17 12:13:03,472 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 167 /         282 finished (hours)        1100
-2025-10-17 12:13:03,472 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 59.2%
-2025-10-17 12:13:03,534 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         168
-2025-10-17 12:13:05,819 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 168 /         282 finished (hours)        1100
-2025-10-17 12:13:05,819 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 59.6%
-2025-10-17 12:13:05,881 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         169
-2025-10-17 12:13:08,134 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 169 /         282 finished (hours)        1100
-2025-10-17 12:13:08,135 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 59.9%
-2025-10-17 12:13:08,197 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         170
-2025-10-17 12:13:10,454 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 170 /         282 finished (hours)        1100
-2025-10-17 12:13:10,455 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 60.3%
-2025-10-17 12:13:10,516 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         171
-2025-10-17 12:13:12,774 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 171 /         282 finished (hours)        1100
-2025-10-17 12:13:12,774 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 60.6%
-2025-10-17 12:13:12,836 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         172
-2025-10-17 12:13:15,094 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 172 /         282 finished (hours)        1100
-2025-10-17 12:13:15,094 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 61.0%
-2025-10-17 12:13:15,156 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         173
-2025-10-17 12:13:17,411 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 173 /         282 finished (hours)        1100
-2025-10-17 12:13:17,411 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 61.3%
-2025-10-17 12:13:17,473 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         174
-2025-10-17 12:13:19,771 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 174 /         282 finished (hours)        1100
-2025-10-17 12:13:19,772 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 61.7%
-2025-10-17 12:13:19,833 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         175
-2025-10-17 12:13:22,061 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 175 /         282 finished (hours)        1100
-2025-10-17 12:13:22,061 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 62.1%
-2025-10-17 12:13:22,123 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         176
-2025-10-17 12:13:24,362 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 176 /         282 finished (hours)        1100
-2025-10-17 12:13:24,362 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 62.4%
-2025-10-17 12:13:24,422 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         177
-2025-10-17 12:13:26,627 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 177 /         282 finished (hours)        1100
-2025-10-17 12:13:26,627 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 62.8%
-2025-10-17 12:13:26,688 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         178
-2025-10-17 12:13:28,890 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 178 /         282 finished (hours)        1100
-2025-10-17 12:13:28,890 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 63.1%
-2025-10-17 12:13:28,951 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         179
-2025-10-17 12:13:31,193 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 179 /         282 finished (hours)        1100
-2025-10-17 12:13:31,193 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 63.5%
-2025-10-17 12:13:31,255 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         180
-2025-10-17 12:13:33,534 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 180 /         282 finished (hours)        1100
-2025-10-17 12:13:33,534 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 63.8%
-2025-10-17 12:13:33,596 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         181
-2025-10-17 12:13:35,836 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 181 /         282 finished (hours)        1100
-2025-10-17 12:13:35,836 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 64.2%
-2025-10-17 12:13:35,898 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         182
-2025-10-17 12:13:38,134 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 182 /         282 finished (hours)        1100
-2025-10-17 12:13:38,134 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 64.5%
-2025-10-17 12:13:38,196 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         183
-2025-10-17 12:13:40,448 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 183 /         282 finished (hours)        1100
-2025-10-17 12:13:40,448 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 64.9%
-2025-10-17 12:13:40,508 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         184
-2025-10-17 12:13:42,765 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 184 /         282 finished (hours)        1100
-2025-10-17 12:13:42,765 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 65.2%
-2025-10-17 12:13:42,826 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         185
-2025-10-17 12:13:45,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 185 /         282 finished (hours)        1100
-2025-10-17 12:13:45,086 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 65.6%
-2025-10-17 12:13:45,147 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         186
-2025-10-17 12:13:47,445 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 186 /         282 finished (hours)        1100
-2025-10-17 12:13:47,445 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 66.0%
-2025-10-17 12:13:47,505 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         187
-2025-10-17 12:13:49,757 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 187 /         282 finished (hours)        1100
-2025-10-17 12:13:49,757 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 66.3%
-2025-10-17 12:13:49,818 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         188
-2025-10-17 12:13:52,078 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 188 /         282 finished (hours)        1100
-2025-10-17 12:13:52,078 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 66.7%
-2025-10-17 12:13:52,139 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         189
-2025-10-17 12:13:54,393 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 189 /         282 finished (hours)        1100
-2025-10-17 12:13:54,393 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 67.0%
-2025-10-17 12:13:54,454 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         190
-2025-10-17 12:13:56,712 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 190 /         282 finished (hours)        1100
-2025-10-17 12:13:56,712 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 67.4%
-2025-10-17 12:13:56,773 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         191
-2025-10-17 12:13:59,017 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 191 /         282 finished (hours)        1100
-2025-10-17 12:13:59,018 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 67.7%
-2025-10-17 12:13:59,078 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         192
-2025-10-17 12:14:01,356 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 192 /         282 finished (hours)        1100
-2025-10-17 12:14:01,356 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 68.1%
-2025-10-17 12:14:01,416 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         193
-2025-10-17 12:14:03,652 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 193 /         282 finished (hours)        1100
-2025-10-17 12:14:03,652 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 68.4%
-2025-10-17 12:14:03,713 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         194
-2025-10-17 12:14:05,952 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 194 /         282 finished (hours)        1100
-2025-10-17 12:14:05,952 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 68.8%
-2025-10-17 12:14:06,013 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         195
-2025-10-17 12:14:08,253 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 195 /         282 finished (hours)        1100
-2025-10-17 12:14:08,253 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 69.1%
-2025-10-17 12:14:08,313 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         196
-2025-10-17 12:14:10,553 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 196 /         282 finished (hours)        1100
-2025-10-17 12:14:10,553 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 69.5%
-2025-10-17 12:14:10,612 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         197
-2025-10-17 12:14:12,871 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 197 /         282 finished (hours)        1100
-2025-10-17 12:14:12,871 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 69.9%
-2025-10-17 12:14:12,931 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         198
-2025-10-17 12:14:15,198 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 198 /         282 finished (hours)        1100
-2025-10-17 12:14:15,198 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 70.2%
-2025-10-17 12:14:15,258 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         199
-2025-10-17 12:14:17,508 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 199 /         282 finished (hours)        1100
-2025-10-17 12:14:17,509 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 70.6%
-2025-10-17 12:14:17,569 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         200
-2025-10-17 12:14:19,817 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 200 /         282 finished (hours)        1100
-2025-10-17 12:14:19,817 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 70.9%
-2025-10-17 12:14:19,877 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         201
-2025-10-17 12:14:22,124 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 201 /         282 finished (hours)        1100
-2025-10-17 12:14:22,124 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 71.3%
-2025-10-17 12:14:22,184 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         202
-2025-10-17 12:14:24,434 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 202 /         282 finished (hours)        1100
-2025-10-17 12:14:24,434 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 71.6%
-2025-10-17 12:14:24,495 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         203
-2025-10-17 12:14:26,751 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 203 /         282 finished (hours)        1100
-2025-10-17 12:14:26,751 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 72.0%
-2025-10-17 12:14:26,811 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         204
-2025-10-17 12:14:29,094 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 204 /         282 finished (hours)        1100
-2025-10-17 12:14:29,095 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 72.3%
-2025-10-17 12:14:29,155 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         205
-2025-10-17 12:14:31,400 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 205 /         282 finished (hours)        1100
-2025-10-17 12:14:31,400 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 72.7%
-2025-10-17 12:14:31,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         206
-2025-10-17 12:14:33,702 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 206 /         282 finished (hours)        1100
-2025-10-17 12:14:33,702 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 73.0%
-2025-10-17 12:14:33,763 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         207
-2025-10-17 12:14:36,013 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 207 /         282 finished (hours)        1100
-2025-10-17 12:14:36,013 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 73.4%
-2025-10-17 12:14:36,073 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         208
-2025-10-17 12:14:38,324 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 208 /         282 finished (hours)        1100
-2025-10-17 12:14:38,324 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 73.8%
-2025-10-17 12:14:38,384 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         209
-2025-10-17 12:14:40,626 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 209 /         282 finished (hours)        1100
-2025-10-17 12:14:40,626 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 74.1%
-2025-10-17 12:14:40,686 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         210
-2025-10-17 12:14:42,958 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 210 /         282 finished (hours)        1100
-2025-10-17 12:14:42,958 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 74.5%
-2025-10-17 12:14:43,018 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         211
-2025-10-17 12:14:45,274 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 211 /         282 finished (hours)        1100
-2025-10-17 12:14:45,274 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 74.8%
-2025-10-17 12:14:45,334 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         212
-2025-10-17 12:14:47,576 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 212 /         282 finished (hours)        1100
-2025-10-17 12:14:47,576 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 75.2%
-2025-10-17 12:14:47,636 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         213
-2025-10-17 12:14:49,880 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 213 /         282 finished (hours)        1100
-2025-10-17 12:14:49,880 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 75.5%
-2025-10-17 12:14:49,940 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         214
-2025-10-17 12:14:52,183 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 214 /         282 finished (hours)        1100
-2025-10-17 12:14:52,183 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 75.9%
-2025-10-17 12:14:52,244 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         215
-2025-10-17 12:14:54,488 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 215 /         282 finished (hours)        1100
-2025-10-17 12:14:54,489 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 76.2%
-2025-10-17 12:14:54,549 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         216
-2025-10-17 12:14:56,830 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 216 /         282 finished (hours)        1100
-2025-10-17 12:14:56,830 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 76.6%
-2025-10-17 12:14:56,891 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         217
-2025-10-17 12:14:59,130 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 217 /         282 finished (hours)        1100
-2025-10-17 12:14:59,130 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 77.0%
-2025-10-17 12:14:59,190 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         218
-2025-10-17 12:15:01,431 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 218 /         282 finished (hours)        1100
-2025-10-17 12:15:01,431 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 77.3%
-2025-10-17 12:15:01,491 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         219
-2025-10-17 12:15:03,735 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 219 /         282 finished (hours)        1100
-2025-10-17 12:15:03,735 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 77.7%
-2025-10-17 12:15:03,795 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         220
-2025-10-17 12:15:06,037 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 220 /         282 finished (hours)        1100
-2025-10-17 12:15:06,037 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 78.0%
-2025-10-17 12:15:06,098 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         221
-2025-10-17 12:15:08,341 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 221 /         282 finished (hours)        1100
-2025-10-17 12:15:08,341 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 78.4%
-2025-10-17 12:15:08,401 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         222
-2025-10-17 12:15:10,687 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 222 /         282 finished (hours)        1100
-2025-10-17 12:15:10,688 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 78.7%
-2025-10-17 12:15:10,748 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         223
-2025-10-17 12:15:12,999 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 223 /         282 finished (hours)        1100
-2025-10-17 12:15:12,999 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 79.1%
-2025-10-17 12:15:13,058 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         224
-2025-10-17 12:15:15,302 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 224 /         282 finished (hours)        1100
-2025-10-17 12:15:15,302 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 79.4%
-2025-10-17 12:15:15,362 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         225
-2025-10-17 12:15:17,602 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 225 /         282 finished (hours)        1100
-2025-10-17 12:15:17,602 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 79.8%
-2025-10-17 12:15:17,663 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         226
-2025-10-17 12:15:19,907 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 226 /         282 finished (hours)        1100
-2025-10-17 12:15:19,907 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 80.1%
-2025-10-17 12:15:19,968 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         227
-2025-10-17 12:15:22,211 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 227 /         282 finished (hours)        1100
-2025-10-17 12:15:22,211 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 80.5%
-2025-10-17 12:15:22,271 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         228
-2025-10-17 12:15:24,551 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 228 /         282 finished (hours)        1100
-2025-10-17 12:15:24,551 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 80.9%
-2025-10-17 12:15:24,611 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         229
-2025-10-17 12:15:26,850 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 229 /         282 finished (hours)        1100
-2025-10-17 12:15:26,850 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 81.2%
-2025-10-17 12:15:26,910 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         230
-2025-10-17 12:15:29,161 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 230 /         282 finished (hours)        1100
-2025-10-17 12:15:29,161 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 81.6%
-2025-10-17 12:15:29,222 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         231
-2025-10-17 12:15:31,470 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 231 /         282 finished (hours)        1100
-2025-10-17 12:15:31,471 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 81.9%
-2025-10-17 12:15:31,531 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         232
-2025-10-17 12:15:33,780 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 232 /         282 finished (hours)        1100
-2025-10-17 12:15:33,780 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 82.3%
-2025-10-17 12:15:33,842 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         233
-2025-10-17 12:15:36,086 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 233 /         282 finished (hours)        1100
-2025-10-17 12:15:36,086 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 82.6%
-2025-10-17 12:15:36,146 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         234
-2025-10-17 12:15:38,427 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 234 /         282 finished (hours)        1100
-2025-10-17 12:15:38,427 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 83.0%
-2025-10-17 12:15:38,488 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         235
-2025-10-17 12:15:40,734 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 235 /         282 finished (hours)        1100
-2025-10-17 12:15:40,734 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 83.3%
-2025-10-17 12:15:40,795 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         236
-2025-10-17 12:15:43,036 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 236 /         282 finished (hours)        1100
-2025-10-17 12:15:43,036 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 83.7%
-2025-10-17 12:15:43,096 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         237
-2025-10-17 12:15:45,335 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 237 /         282 finished (hours)        1100
-2025-10-17 12:15:45,335 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 84.0%
-2025-10-17 12:15:45,396 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         238
-2025-10-17 12:15:47,641 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 238 /         282 finished (hours)        1100
-2025-10-17 12:15:47,642 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 84.4%
-2025-10-17 12:15:47,703 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         239
-2025-10-17 12:15:49,947 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 239 /         282 finished (hours)        1100
-2025-10-17 12:15:49,947 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 84.8%
-2025-10-17 12:15:50,008 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         240
-2025-10-17 12:15:52,282 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 240 /         282 finished (hours)        1100
-2025-10-17 12:15:52,282 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 85.1%
-2025-10-17 12:15:52,342 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         241
-2025-10-17 12:15:54,596 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 241 /         282 finished (hours)        1100
-2025-10-17 12:15:54,597 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 85.5%
-2025-10-17 12:15:54,658 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         242
-2025-10-17 12:15:56,900 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 242 /         282 finished (hours)        1100
-2025-10-17 12:15:56,900 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 85.8%
-2025-10-17 12:15:56,963 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         243
-2025-10-17 12:15:59,207 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 243 /         282 finished (hours)        1100
-2025-10-17 12:15:59,207 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 86.2%
-2025-10-17 12:15:59,269 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         244
-2025-10-17 12:16:01,519 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 244 /         282 finished (hours)        1100
-2025-10-17 12:16:01,519 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 86.5%
-2025-10-17 12:16:01,581 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         245
-2025-10-17 12:16:03,831 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 245 /         282 finished (hours)        1100
-2025-10-17 12:16:03,831 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 86.9%
-2025-10-17 12:16:03,893 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         246
-2025-10-17 12:16:06,179 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 246 /         282 finished (hours)        1100
-2025-10-17 12:16:06,179 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 87.2%
-2025-10-17 12:16:06,241 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         247
-2025-10-17 12:16:08,495 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 247 /         282 finished (hours)        1100
-2025-10-17 12:16:08,495 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 87.6%
-2025-10-17 12:16:08,557 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         248
-2025-10-17 12:16:10,811 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 248 /         282 finished (hours)        1100
-2025-10-17 12:16:10,811 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 87.9%
-2025-10-17 12:16:10,873 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         249
-2025-10-17 12:16:13,119 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 249 /         282 finished (hours)        1100
-2025-10-17 12:16:13,119 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 88.3%
-2025-10-17 12:16:13,181 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         250
-2025-10-17 12:16:15,428 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 250 /         282 finished (hours)        1100
-2025-10-17 12:16:15,428 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 88.7%
-2025-10-17 12:16:15,491 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         251
-2025-10-17 12:16:17,741 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 251 /         282 finished (hours)        1100
-2025-10-17 12:16:17,742 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 89.0%
-2025-10-17 12:16:17,803 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         252
-2025-10-17 12:16:20,085 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 252 /         282 finished (hours)        1100
-2025-10-17 12:16:20,085 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 89.4%
-2025-10-17 12:16:20,148 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         253
-2025-10-17 12:16:22,394 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 253 /         282 finished (hours)        1100
-2025-10-17 12:16:22,395 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 89.7%
-2025-10-17 12:16:22,456 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         254
-2025-10-17 12:16:24,702 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 254 /         282 finished (hours)        1100
-2025-10-17 12:16:24,703 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 90.1%
-2025-10-17 12:16:24,765 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         255
-2025-10-17 12:16:27,011 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 255 /         282 finished (hours)        1100
-2025-10-17 12:16:27,011 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 90.4%
-2025-10-17 12:16:27,073 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         256
-2025-10-17 12:16:29,317 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 256 /         282 finished (hours)        1100
-2025-10-17 12:16:29,317 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 90.8%
-2025-10-17 12:16:29,380 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         257
-2025-10-17 12:16:31,619 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 257 /         282 finished (hours)        1100
-2025-10-17 12:16:31,619 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 91.1%
-2025-10-17 12:16:31,681 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         258
-2025-10-17 12:16:33,964 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 258 /         282 finished (hours)        1100
-2025-10-17 12:16:33,964 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 91.5%
-2025-10-17 12:16:34,027 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         259
-2025-10-17 12:16:36,272 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 259 /         282 finished (hours)        1100
-2025-10-17 12:16:36,272 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 91.8%
-2025-10-17 12:16:36,335 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         260
-2025-10-17 12:16:38,583 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 260 /         282 finished (hours)        1100
-2025-10-17 12:16:38,583 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 92.2%
-2025-10-17 12:16:38,646 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         261
-2025-10-17 12:16:40,895 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 261 /         282 finished (hours)        1100
-2025-10-17 12:16:40,895 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 92.6%
-2025-10-17 12:16:40,957 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         262
-2025-10-17 12:16:43,197 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 262 /         282 finished (hours)        1100
-2025-10-17 12:16:43,197 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 92.9%
-2025-10-17 12:16:43,260 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         263
-2025-10-17 12:16:45,504 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 263 /         282 finished (hours)        1100
-2025-10-17 12:16:45,504 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 93.3%
-2025-10-17 12:16:45,566 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         264
-2025-10-17 12:16:47,847 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 264 /         282 finished (hours)        1100
-2025-10-17 12:16:47,847 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 93.6%
-2025-10-17 12:16:47,909 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         265
-2025-10-17 12:16:50,149 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 265 /         282 finished (hours)        1100
-2025-10-17 12:16:50,149 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 94.0%
-2025-10-17 12:16:50,211 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         266
-2025-10-17 12:16:52,455 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 266 /         282 finished (hours)        1100
-2025-10-17 12:16:52,455 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 94.3%
-2025-10-17 12:16:52,518 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         267
-2025-10-17 12:16:54,768 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 267 /         282 finished (hours)        1100
-2025-10-17 12:16:54,769 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 94.7%
-2025-10-17 12:16:54,830 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         268
-2025-10-17 12:16:57,089 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 268 /         282 finished (hours)        1100
-2025-10-17 12:16:57,089 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 95.0%
-2025-10-17 12:16:57,152 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         269
-2025-10-17 12:16:59,413 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 269 /         282 finished (hours)        1100
-2025-10-17 12:16:59,413 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 95.4%
-2025-10-17 12:16:59,475 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         270
-2025-10-17 12:17:01,767 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 270 /         282 finished (hours)        1100
-2025-10-17 12:17:01,768 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 95.7%
-2025-10-17 12:17:01,831 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         271
-2025-10-17 12:17:04,065 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 271 /         282 finished (hours)        1100
-2025-10-17 12:17:04,066 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 96.1%
-2025-10-17 12:17:04,127 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         272
-2025-10-17 12:17:06,365 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 272 /         282 finished (hours)        1100
-2025-10-17 12:17:06,365 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 96.5%
-2025-10-17 12:17:06,427 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         273
-2025-10-17 12:17:08,673 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 273 /         282 finished (hours)        1100
-2025-10-17 12:17:08,673 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 96.8%
-2025-10-17 12:17:08,736 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         274
-2025-10-17 12:17:10,972 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 274 /         282 finished (hours)        1100
-2025-10-17 12:17:10,972 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 97.2%
-2025-10-17 12:17:11,033 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         275
-2025-10-17 12:17:13,293 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 275 /         282 finished (hours)        1100
-2025-10-17 12:17:13,293 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 97.5%
-2025-10-17 12:17:13,355 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         276
-2025-10-17 12:17:15,659 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 276 /         282 finished (hours)        1100
-2025-10-17 12:17:15,659 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 97.9%
-2025-10-17 12:17:15,721 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         277
-2025-10-17 12:17:17,974 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 277 /         282 finished (hours)        1100
-2025-10-17 12:17:17,974 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 98.2%
-2025-10-17 12:17:18,035 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         278
-2025-10-17 12:17:20,288 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 278 /         282 finished (hours)        1100
-2025-10-17 12:17:20,288 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 98.6%
-2025-10-17 12:17:20,351 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         279
-2025-10-17 12:17:22,611 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 279 /         282 finished (hours)        1100
-2025-10-17 12:17:22,611 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 98.9%
-2025-10-17 12:17:22,673 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         280
-2025-10-17 12:17:24,924 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 280 /         282 finished (hours)        1100
-2025-10-17 12:17:24,924 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 99.3%
-2025-10-17 12:17:24,987 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         281
-2025-10-17 12:17:27,233 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 281 /         282 finished (hours)        1100
-2025-10-17 12:17:27,234 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 99.6%
-2025-10-17 12:17:27,296 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         282
-2025-10-17 12:17:29,582 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 282 /         282 finished (hours)        1100
-2025-10-17 12:17:29,582 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪进度: 100.0%
-2025-10-17 12:17:29,582 - LagrangianTracking(FVCOM_offline) - INFO : 粒子追踪已完成!
-2025-10-17 12:17:29,645 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: ./INPDIR/2025/subei_0001.nc         283
-2025-10-17 12:17:31,891 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 运行追踪程序
+2025-10-24 20:21:30,271 - FVCOM_Reader - INFO : 添加文件日志处理程序: /home/yzbsj/文档/Code/pycharm/FVCOM_processing/output/log/log
+2025-10-24 20:21:30,271 - FVCOM_Reader - INFO : Found FVCOM output files: ['/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc']
+2025-10-24 20:21:30,273 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc 打开成功
+2025-10-24 20:21:30,285 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc Time info: 开始 2025-04-01 00:00:00;结束 2025-04-01 23:50:00
+2025-10-24 20:21:30,285 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc 读取结束
+2025-10-24 20:21:30,286 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc 打开成功
+2025-10-24 20:21:30,297 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc Time info: 开始 2025-04-02 00:00:00;结束 2025-04-02 23:50:00
+2025-10-24 20:21:30,297 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc 读取结束
+2025-10-24 20:21:30,298 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc 打开成功
+2025-10-24 20:21:30,310 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc Time info: 开始 2025-04-03 00:00:00;结束 2025-04-03 23:50:00
+2025-10-24 20:21:30,310 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc 读取结束
+2025-10-24 20:21:30,311 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc 打开成功
+2025-10-24 20:21:30,322 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc Time info: 开始 2025-04-04 00:00:00;结束 2025-04-04 23:50:00
+2025-10-24 20:21:30,322 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc 读取结束
+2025-10-24 20:21:30,323 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc 打开成功
+2025-10-24 20:21:30,334 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc Time info: 开始 2025-04-05 00:00:00;结束 2025-04-05 23:50:00
+2025-10-24 20:21:30,334 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc 读取结束
+2025-10-24 20:21:30,335 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc 打开成功
+2025-10-24 20:21:30,347 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc Time info: 开始 2025-04-06 00:00:00;结束 2025-04-06 23:50:00
+2025-10-24 20:21:30,347 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc 读取结束
+2025-10-24 20:21:30,348 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc 打开成功
+2025-10-24 20:21:30,359 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc Time info: 开始 2025-04-07 00:00:00;结束 2025-04-07 23:50:00
+2025-10-24 20:21:30,359 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc 读取结束
+2025-10-24 20:21:30,360 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc 打开成功
+2025-10-24 20:21:30,372 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc Time info: 开始 2025-04-08 00:00:00;结束 2025-04-08 23:50:00
+2025-10-24 20:21:30,372 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc 读取结束
+2025-10-24 20:21:30,373 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc 打开成功
+2025-10-24 20:21:30,384 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc Time info: 开始 2025-04-09 00:00:00;结束 2025-04-09 23:50:00
+2025-10-24 20:21:30,384 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc 读取结束
+2025-10-24 20:21:30,385 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc 打开成功
+2025-10-24 20:21:30,396 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc Time info: 开始 2025-04-10 00:00:00;结束 2025-04-10 23:50:00
+2025-10-24 20:21:30,396 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc 读取结束
+2025-10-24 20:21:30,397 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc 打开成功
+2025-10-24 20:21:30,409 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc Time info: 开始 2025-04-11 00:00:00;结束 2025-04-11 23:50:00
+2025-10-24 20:21:30,409 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc 读取结束
+2025-10-24 20:21:30,410 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc 打开成功
+2025-10-24 20:21:30,421 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc Time info: 开始 2025-04-12 00:00:00;结束 2025-04-12 23:50:00
+2025-10-24 20:21:30,421 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc 读取结束
+2025-10-24 20:21:30,422 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc 打开成功
+2025-10-24 20:21:30,433 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc Time info: 开始 2025-04-13 00:00:00;结束 2025-04-13 23:50:00
+2025-10-24 20:21:30,433 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc 读取结束
+2025-10-24 20:21:30,434 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc 打开成功
+2025-10-24 20:21:30,446 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc Time info: 开始 2025-04-14 00:00:00;结束 2025-04-14 23:50:00
+2025-10-24 20:21:30,446 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc 读取结束
+2025-10-24 20:21:30,447 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc 打开成功
+2025-10-24 20:21:30,458 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc Time info: 开始 2025-04-15 00:00:00;结束 2025-04-15 23:50:00
+2025-10-24 20:21:30,458 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc 读取结束
+2025-10-24 20:21:30,459 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc 打开成功
+2025-10-24 20:21:30,470 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc Time info: 开始 2025-04-16 00:00:00;结束 2025-04-16 23:50:00
+2025-10-24 20:21:30,470 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc 读取结束
+2025-10-24 20:21:30,471 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc 打开成功
+2025-10-24 20:21:30,482 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc Time info: 开始 2025-04-17 00:00:00;结束 2025-04-17 23:50:00
+2025-10-24 20:21:30,482 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc 读取结束
+2025-10-24 20:21:30,483 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc 打开成功
+2025-10-24 20:21:30,495 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc Time info: 开始 2025-04-18 00:00:00;结束 2025-04-18 23:50:00
+2025-10-24 20:21:30,495 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc 读取结束
+2025-10-24 20:21:30,496 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc 打开成功
+2025-10-24 20:21:30,507 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc Time info: 开始 2025-04-19 00:00:00;结束 2025-04-19 23:50:00
+2025-10-24 20:21:30,507 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc 读取结束
+2025-10-24 20:21:30,508 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc 打开成功
+2025-10-24 20:21:30,520 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc Time info: 开始 2025-04-20 00:00:00;结束 2025-04-20 23:50:00
+2025-10-24 20:21:30,520 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc 读取结束
+2025-10-24 20:21:30,521 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc 打开成功
+2025-10-24 20:21:30,532 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc Time info: 开始 2025-04-21 00:00:00;结束 2025-04-21 23:50:00
+2025-10-24 20:21:30,532 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc 读取结束
+2025-10-24 20:21:30,533 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc 打开成功
+2025-10-24 20:21:30,545 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc Time info: 开始 2025-04-22 00:00:00;结束 2025-04-22 23:50:00
+2025-10-24 20:21:30,545 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc 读取结束
+2025-10-24 20:21:30,546 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc 打开成功
+2025-10-24 20:21:30,557 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc Time info: 开始 2025-04-23 00:00:00;结束 2025-04-23 23:50:00
+2025-10-24 20:21:30,557 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc 读取结束
+2025-10-24 20:21:30,558 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc 打开成功
+2025-10-24 20:21:30,569 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc Time info: 开始 2025-04-24 00:00:00;结束 2025-04-24 23:50:00
+2025-10-24 20:21:30,569 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc 读取结束
+2025-10-24 20:21:30,570 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc 打开成功
+2025-10-24 20:21:30,582 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc Time info: 开始 2025-04-25 00:00:00;结束 2025-04-25 23:50:00
+2025-10-24 20:21:30,582 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc 读取结束
+2025-10-24 20:21:30,582 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc 打开成功
+2025-10-24 20:21:30,594 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc Time info: 开始 2025-04-26 00:00:00;结束 2025-04-26 23:50:00
+2025-10-24 20:21:30,594 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc 读取结束
+2025-10-24 20:21:30,595 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc 打开成功
+2025-10-24 20:21:30,606 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc Time info: 开始 2025-04-27 00:00:00;结束 2025-04-27 23:50:00
+2025-10-24 20:21:30,606 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc 读取结束
+2025-10-24 20:21:30,607 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc 打开成功
+2025-10-24 20:21:30,618 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc Time info: 开始 2025-04-28 00:00:00;结束 2025-04-28 23:50:00
+2025-10-24 20:21:30,618 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc 读取结束
+2025-10-24 20:21:30,619 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc 打开成功
+2025-10-24 20:21:30,631 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc Time info: 开始 2025-04-29 00:00:00;结束 2025-04-29 23:50:00
+2025-10-24 20:21:30,631 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc 读取结束
+2025-10-24 20:21:30,632 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc 打开成功
+2025-10-24 20:21:30,643 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc Time info: 开始 2025-04-30 00:00:00;结束 2025-04-30 23:50:00
+2025-10-24 20:21:30,643 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc 读取结束
+2025-10-24 20:21:30,644 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc 打开成功
+2025-10-24 20:21:30,655 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc Time info: 开始 2025-05-01 00:00:00;结束 2025-05-01 23:50:00
+2025-10-24 20:21:30,655 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc 读取结束
+2025-10-24 20:21:30,656 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc 打开成功
+2025-10-24 20:21:30,667 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc Time info: 开始 2025-05-02 00:00:00;结束 2025-05-02 23:50:00
+2025-10-24 20:21:30,667 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc 读取结束
+2025-10-24 20:21:30,668 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc 打开成功
+2025-10-24 20:21:30,680 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc Time info: 开始 2025-05-03 00:00:00;结束 2025-05-03 23:50:00
+2025-10-24 20:21:30,680 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc 读取结束
+2025-10-24 20:21:30,681 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc 打开成功
+2025-10-24 20:21:30,692 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc Time info: 开始 2025-05-04 00:00:00;结束 2025-05-04 23:50:00
+2025-10-24 20:21:30,692 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc 读取结束
+2025-10-24 20:21:30,693 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc 打开成功
+2025-10-24 20:21:30,704 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc Time info: 开始 2025-05-05 00:00:00;结束 2025-05-05 23:50:00
+2025-10-24 20:21:30,704 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc 读取结束
+2025-10-24 20:21:30,705 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc 打开成功
+2025-10-24 20:21:30,717 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc Time info: 开始 2025-05-06 00:00:00;结束 2025-05-06 23:50:00
+2025-10-24 20:21:30,717 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc 读取结束
+2025-10-24 20:21:30,718 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc 打开成功
+2025-10-24 20:21:30,729 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc Time info: 开始 2025-05-07 00:00:00;结束 2025-05-07 23:50:00
+2025-10-24 20:21:30,729 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc 读取结束
+2025-10-24 20:21:30,730 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc 打开成功
+2025-10-24 20:21:30,741 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc Time info: 开始 2025-05-08 00:00:00;结束 2025-05-08 23:50:00
+2025-10-24 20:21:30,741 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc 读取结束
+2025-10-24 20:21:30,742 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc 打开成功
+2025-10-24 20:21:30,754 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc Time info: 开始 2025-05-09 00:00:00;结束 2025-05-09 23:50:00
+2025-10-24 20:21:30,754 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc 读取结束
+2025-10-24 20:21:30,755 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc 打开成功
+2025-10-24 20:21:30,766 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc Time info: 开始 2025-05-10 00:00:00;结束 2025-05-10 23:50:00
+2025-10-24 20:21:30,766 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc 读取结束
+2025-10-24 20:21:30,767 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc 打开成功
+2025-10-24 20:21:30,778 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc Time info: 开始 2025-05-11 00:00:00;结束 2025-05-11 23:50:00
+2025-10-24 20:21:30,778 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc 读取结束
+2025-10-24 20:21:30,779 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc 打开成功
+2025-10-24 20:21:30,791 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc Time info: 开始 2025-05-12 00:00:00;结束 2025-05-12 23:50:00
+2025-10-24 20:21:30,791 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc 读取结束
+2025-10-24 20:21:30,792 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc 打开成功
+2025-10-24 20:21:30,803 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc Time info: 开始 2025-05-13 00:00:00;结束 2025-05-13 23:50:00
+2025-10-24 20:21:30,803 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc 读取结束
+2025-10-24 20:21:30,804 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc 打开成功
+2025-10-24 20:21:30,815 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc Time info: 开始 2025-05-14 00:00:00;结束 2025-05-14 23:50:00
+2025-10-24 20:21:30,816 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc 读取结束
+2025-10-24 20:21:30,816 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc 打开成功
+2025-10-24 20:21:30,828 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc Time info: 开始 2025-05-15 00:00:00;结束 2025-05-15 23:50:00
+2025-10-24 20:21:30,828 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc 读取结束
+2025-10-24 20:21:30,829 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc 打开成功
+2025-10-24 20:21:30,840 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc Time info: 开始 2025-05-16 00:00:00;结束 2025-05-16 23:50:00
+2025-10-24 20:21:30,840 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc 读取结束
+2025-10-24 20:21:30,841 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc 打开成功
+2025-10-24 20:21:30,852 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc Time info: 开始 2025-05-17 00:00:00;结束 2025-05-17 23:50:00
+2025-10-24 20:21:30,852 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc 读取结束
+2025-10-24 20:21:30,853 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc 打开成功
+2025-10-24 20:21:30,865 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc Time info: 开始 2025-05-18 00:00:00;结束 2025-05-18 23:50:00
+2025-10-24 20:21:30,865 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc 读取结束
+2025-10-24 20:21:30,866 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc 打开成功
+2025-10-24 20:21:30,877 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc Time info: 开始 2025-05-19 00:00:00;结束 2025-05-19 23:50:00
+2025-10-24 20:21:30,877 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc 读取结束
+2025-10-24 20:21:30,878 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc 打开成功
+2025-10-24 20:21:30,889 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc Time info: 开始 2025-05-20 00:00:00;结束 2025-05-20 23:50:00
+2025-10-24 20:21:30,889 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc 读取结束
+2025-10-24 20:21:30,890 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc 打开成功
+2025-10-24 20:21:30,901 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc Time info: 开始 2025-05-21 00:00:00;结束 2025-05-21 23:50:00
+2025-10-24 20:21:30,901 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc 读取结束
+2025-10-24 20:21:30,902 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc 打开成功
+2025-10-24 20:21:30,914 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc Time info: 开始 2025-05-22 00:00:00;结束 2025-05-22 23:50:00
+2025-10-24 20:21:30,914 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc 读取结束
+2025-10-24 20:21:30,915 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc 打开成功
+2025-10-24 20:21:30,926 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc Time info: 开始 2025-05-23 00:00:00;结束 2025-05-23 23:50:00
+2025-10-24 20:21:30,926 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc 读取结束
+2025-10-24 20:21:30,927 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc 打开成功
+2025-10-24 20:21:30,938 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc Time info: 开始 2025-05-24 00:00:00;结束 2025-05-24 23:50:00
+2025-10-24 20:21:30,938 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc 读取结束
+2025-10-24 20:21:30,939 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc 打开成功
+2025-10-24 20:21:30,951 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc Time info: 开始 2025-05-25 00:00:00;结束 2025-05-25 23:50:00
+2025-10-24 20:21:30,951 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc 读取结束
+2025-10-24 20:21:30,952 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc 打开成功
+2025-10-24 20:21:30,963 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc Time info: 开始 2025-05-26 00:00:00;结束 2025-05-26 23:50:00
+2025-10-24 20:21:30,963 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc 读取结束
+2025-10-24 20:21:30,964 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc 打开成功
+2025-10-24 20:21:30,975 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc Time info: 开始 2025-05-27 00:00:00;结束 2025-05-27 23:50:00
+2025-10-24 20:21:30,975 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc 读取结束
+2025-10-24 20:21:30,976 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc 打开成功
+2025-10-24 20:21:30,988 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc Time info: 开始 2025-05-28 00:00:00;结束 2025-05-28 23:50:00
+2025-10-24 20:21:30,988 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc 读取结束
+2025-10-24 20:21:30,989 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc 打开成功
+2025-10-24 20:21:31,000 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc Time info: 开始 2025-05-29 00:00:00;结束 2025-05-29 23:50:00
+2025-10-24 20:21:31,000 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc 读取结束
+2025-10-24 20:21:31,007 - FVCOM_Reader - INFO : FVCOM 输出文件的时间: 2025-04-01 00:00:00 至 2025-05-29 23:50:00, 时间步长为600.0秒
+2025-10-24 20:21:31,008 - LagrangianTracking(FVCOM_offline) - INFO : 添加文件日志处理程序: /home/yzbsj/文档/Code/pycharm/FVCOM_processing/output/log/log
+2025-10-24 20:21:31,008 - LagrangianTracking(FVCOM_offline) - INFO : 注:离线追踪目前至多支持1100个粒子
+2025-10-24 20:21:31,008 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 读取FVCOM离线拉格朗日追踪配置
+2025-10-24 20:21:31,008 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 读取FVCOM离线拉格朗日追踪配置
+2025-10-24 20:21:31,008 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 离线拉格朗日追踪的namelist文件已写入: {nml_file}
+2025-10-24 20:21:31,009 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 离线拉格朗日追踪的namelist文件已写入: /home/yzbsj/文档/FVCOM_lag/tst_new_run.dat
+2025-10-24 20:21:31,009 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至拉格朗日追踪源代码目录:/home/yzbsj/Downloads/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/
+2025-10-24 20:21:31,009 - LagrangianTracking(FVCOM_offline) - INFO : 进行make clean
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 修改ptraj的makefile
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择球面(经纬度)/投影坐标系
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:球面(经纬度)坐标系
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择球面(经纬度)/投影坐标系
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择追踪或追溯
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:追溯
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择追踪或追溯
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:开启风拖曳
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择开启/关闭风拖曳
+2025-10-24 20:21:31,011 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 更新makefile(追踪/追溯)
+2025-10-24 20:21:31,012 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(追踪/追溯)
+2025-10-24 20:21:31,012 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(全部)
+2025-10-24 20:21:31,013 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 编译ptraj可执行文件
+2025-10-24 20:21:33,454 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 编译ptraj可执行文件
+2025-10-24 20:21:33,454 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 运行追踪程序
+2025-10-24 20:21:33,454 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至:/home/yzbsj/文档/FVCOM_lag,以运行离线粒子追踪
+2025-10-24 20:21:33,454 - LagrangianTracking(FVCOM_offline) - INFO : 执行命令: ./ptraj tst_new
+2025-10-24 20:21:33,460 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 2460825
+2025-10-24 20:21:33,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF NODES            :      116810
+2025-10-24 20:21:33,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF ELEMENTS         :      229847
+2025-10-24 20:21:33,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF SIGMA LAYERS     :          21
+2025-10-24 20:21:33,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 
+2025-10-24 20:21:33,461 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !      MESH READING      :    FINISHED
+2025-10-24 20:21:33,856 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  GRID METRICS READING  :    FINISHED
+2025-10-24 20:21:57,664 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  SET DOMAIN            :    COMPLETED
+2025-10-24 20:36:47,641 - FVCOM_Reader - INFO : 添加文件日志处理程序: /home/yzbsj/文档/Code/pycharm/FVCOM_processing/output/log/log
+2025-10-24 20:36:47,642 - FVCOM_Reader - INFO : Found FVCOM output files: ['/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc', '/home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc']
+2025-10-24 20:36:47,645 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc 打开成功
+2025-10-24 20:36:47,662 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc Time info: 开始 2025-04-01 00:00:00;结束 2025-04-01 23:50:00
+2025-10-24 20:36:47,662 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0001.nc 读取结束
+2025-10-24 20:36:47,664 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc 打开成功
+2025-10-24 20:36:47,677 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc Time info: 开始 2025-04-02 00:00:00;结束 2025-04-02 23:50:00
+2025-10-24 20:36:47,677 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0002.nc 读取结束
+2025-10-24 20:36:47,678 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc 打开成功
+2025-10-24 20:36:47,689 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc Time info: 开始 2025-04-03 00:00:00;结束 2025-04-03 23:50:00
+2025-10-24 20:36:47,689 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0003.nc 读取结束
+2025-10-24 20:36:47,690 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc 打开成功
+2025-10-24 20:36:47,702 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc Time info: 开始 2025-04-04 00:00:00;结束 2025-04-04 23:50:00
+2025-10-24 20:36:47,702 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0004.nc 读取结束
+2025-10-24 20:36:47,703 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc 打开成功
+2025-10-24 20:36:47,714 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc Time info: 开始 2025-04-05 00:00:00;结束 2025-04-05 23:50:00
+2025-10-24 20:36:47,714 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0005.nc 读取结束
+2025-10-24 20:36:47,715 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc 打开成功
+2025-10-24 20:36:47,727 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc Time info: 开始 2025-04-06 00:00:00;结束 2025-04-06 23:50:00
+2025-10-24 20:36:47,727 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0006.nc 读取结束
+2025-10-24 20:36:47,728 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc 打开成功
+2025-10-24 20:36:47,739 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc Time info: 开始 2025-04-07 00:00:00;结束 2025-04-07 23:50:00
+2025-10-24 20:36:47,739 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0007.nc 读取结束
+2025-10-24 20:36:47,740 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc 打开成功
+2025-10-24 20:36:47,751 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc Time info: 开始 2025-04-08 00:00:00;结束 2025-04-08 23:50:00
+2025-10-24 20:36:47,751 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0008.nc 读取结束
+2025-10-24 20:36:47,752 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc 打开成功
+2025-10-24 20:36:47,764 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc Time info: 开始 2025-04-09 00:00:00;结束 2025-04-09 23:50:00
+2025-10-24 20:36:47,764 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0009.nc 读取结束
+2025-10-24 20:36:47,765 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc 打开成功
+2025-10-24 20:36:47,776 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc Time info: 开始 2025-04-10 00:00:00;结束 2025-04-10 23:50:00
+2025-10-24 20:36:47,776 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0010.nc 读取结束
+2025-10-24 20:36:47,777 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc 打开成功
+2025-10-24 20:36:47,789 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc Time info: 开始 2025-04-11 00:00:00;结束 2025-04-11 23:50:00
+2025-10-24 20:36:47,789 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0011.nc 读取结束
+2025-10-24 20:36:47,790 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc 打开成功
+2025-10-24 20:36:47,801 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc Time info: 开始 2025-04-12 00:00:00;结束 2025-04-12 23:50:00
+2025-10-24 20:36:47,801 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0012.nc 读取结束
+2025-10-24 20:36:47,802 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc 打开成功
+2025-10-24 20:36:47,814 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc Time info: 开始 2025-04-13 00:00:00;结束 2025-04-13 23:50:00
+2025-10-24 20:36:47,814 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0013.nc 读取结束
+2025-10-24 20:36:47,815 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc 打开成功
+2025-10-24 20:36:47,826 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc Time info: 开始 2025-04-14 00:00:00;结束 2025-04-14 23:50:00
+2025-10-24 20:36:47,826 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0014.nc 读取结束
+2025-10-24 20:36:47,827 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc 打开成功
+2025-10-24 20:36:47,839 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc Time info: 开始 2025-04-15 00:00:00;结束 2025-04-15 23:50:00
+2025-10-24 20:36:47,839 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0015.nc 读取结束
+2025-10-24 20:36:47,840 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc 打开成功
+2025-10-24 20:36:47,852 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc Time info: 开始 2025-04-16 00:00:00;结束 2025-04-16 23:50:00
+2025-10-24 20:36:47,852 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0016.nc 读取结束
+2025-10-24 20:36:47,853 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc 打开成功
+2025-10-24 20:36:47,865 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc Time info: 开始 2025-04-17 00:00:00;结束 2025-04-17 23:50:00
+2025-10-24 20:36:47,865 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0017.nc 读取结束
+2025-10-24 20:36:47,866 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc 打开成功
+2025-10-24 20:36:47,877 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc Time info: 开始 2025-04-18 00:00:00;结束 2025-04-18 23:50:00
+2025-10-24 20:36:47,877 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0018.nc 读取结束
+2025-10-24 20:36:47,878 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc 打开成功
+2025-10-24 20:36:47,890 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc Time info: 开始 2025-04-19 00:00:00;结束 2025-04-19 23:50:00
+2025-10-24 20:36:47,890 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0019.nc 读取结束
+2025-10-24 20:36:47,891 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc 打开成功
+2025-10-24 20:36:47,902 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc Time info: 开始 2025-04-20 00:00:00;结束 2025-04-20 23:50:00
+2025-10-24 20:36:47,902 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0020.nc 读取结束
+2025-10-24 20:36:47,903 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc 打开成功
+2025-10-24 20:36:47,914 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc Time info: 开始 2025-04-21 00:00:00;结束 2025-04-21 23:50:00
+2025-10-24 20:36:47,914 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0021.nc 读取结束
+2025-10-24 20:36:47,915 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc 打开成功
+2025-10-24 20:36:47,927 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc Time info: 开始 2025-04-22 00:00:00;结束 2025-04-22 23:50:00
+2025-10-24 20:36:47,927 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0022.nc 读取结束
+2025-10-24 20:36:47,928 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc 打开成功
+2025-10-24 20:36:47,939 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc Time info: 开始 2025-04-23 00:00:00;结束 2025-04-23 23:50:00
+2025-10-24 20:36:47,939 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0023.nc 读取结束
+2025-10-24 20:36:47,940 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc 打开成功
+2025-10-24 20:36:47,952 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc Time info: 开始 2025-04-24 00:00:00;结束 2025-04-24 23:50:00
+2025-10-24 20:36:47,952 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0024.nc 读取结束
+2025-10-24 20:36:47,953 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc 打开成功
+2025-10-24 20:36:47,964 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc Time info: 开始 2025-04-25 00:00:00;结束 2025-04-25 23:50:00
+2025-10-24 20:36:47,964 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0025.nc 读取结束
+2025-10-24 20:36:47,965 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc 打开成功
+2025-10-24 20:36:47,977 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc Time info: 开始 2025-04-26 00:00:00;结束 2025-04-26 23:50:00
+2025-10-24 20:36:47,977 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0026.nc 读取结束
+2025-10-24 20:36:47,978 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc 打开成功
+2025-10-24 20:36:47,989 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc Time info: 开始 2025-04-27 00:00:00;结束 2025-04-27 23:50:00
+2025-10-24 20:36:47,989 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0027.nc 读取结束
+2025-10-24 20:36:47,990 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc 打开成功
+2025-10-24 20:36:48,001 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc Time info: 开始 2025-04-28 00:00:00;结束 2025-04-28 23:50:00
+2025-10-24 20:36:48,001 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0028.nc 读取结束
+2025-10-24 20:36:48,002 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc 打开成功
+2025-10-24 20:36:48,014 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc Time info: 开始 2025-04-29 00:00:00;结束 2025-04-29 23:50:00
+2025-10-24 20:36:48,014 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0029.nc 读取结束
+2025-10-24 20:36:48,015 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc 打开成功
+2025-10-24 20:36:48,026 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc Time info: 开始 2025-04-30 00:00:00;结束 2025-04-30 23:50:00
+2025-10-24 20:36:48,026 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0030.nc 读取结束
+2025-10-24 20:36:48,027 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc 打开成功
+2025-10-24 20:36:48,038 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc Time info: 开始 2025-05-01 00:00:00;结束 2025-05-01 23:50:00
+2025-10-24 20:36:48,039 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0031.nc 读取结束
+2025-10-24 20:36:48,039 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc 打开成功
+2025-10-24 20:36:48,051 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc Time info: 开始 2025-05-02 00:00:00;结束 2025-05-02 23:50:00
+2025-10-24 20:36:48,051 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0032.nc 读取结束
+2025-10-24 20:36:48,052 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc 打开成功
+2025-10-24 20:36:48,063 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc Time info: 开始 2025-05-03 00:00:00;结束 2025-05-03 23:50:00
+2025-10-24 20:36:48,063 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0033.nc 读取结束
+2025-10-24 20:36:48,064 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc 打开成功
+2025-10-24 20:36:48,076 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc Time info: 开始 2025-05-04 00:00:00;结束 2025-05-04 23:50:00
+2025-10-24 20:36:48,076 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0034.nc 读取结束
+2025-10-24 20:36:48,077 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc 打开成功
+2025-10-24 20:36:48,088 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc Time info: 开始 2025-05-05 00:00:00;结束 2025-05-05 23:50:00
+2025-10-24 20:36:48,088 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0035.nc 读取结束
+2025-10-24 20:36:48,089 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc 打开成功
+2025-10-24 20:36:48,100 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc Time info: 开始 2025-05-06 00:00:00;结束 2025-05-06 23:50:00
+2025-10-24 20:36:48,100 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0036.nc 读取结束
+2025-10-24 20:36:48,101 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc 打开成功
+2025-10-24 20:36:48,113 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc Time info: 开始 2025-05-07 00:00:00;结束 2025-05-07 23:50:00
+2025-10-24 20:36:48,113 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0037.nc 读取结束
+2025-10-24 20:36:48,114 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc 打开成功
+2025-10-24 20:36:48,125 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc Time info: 开始 2025-05-08 00:00:00;结束 2025-05-08 23:50:00
+2025-10-24 20:36:48,125 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0038.nc 读取结束
+2025-10-24 20:36:48,126 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc 打开成功
+2025-10-24 20:36:48,137 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc Time info: 开始 2025-05-09 00:00:00;结束 2025-05-09 23:50:00
+2025-10-24 20:36:48,137 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0039.nc 读取结束
+2025-10-24 20:36:48,138 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc 打开成功
+2025-10-24 20:36:48,150 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc Time info: 开始 2025-05-10 00:00:00;结束 2025-05-10 23:50:00
+2025-10-24 20:36:48,150 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0040.nc 读取结束
+2025-10-24 20:36:48,151 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc 打开成功
+2025-10-24 20:36:48,162 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc Time info: 开始 2025-05-11 00:00:00;结束 2025-05-11 23:50:00
+2025-10-24 20:36:48,162 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0041.nc 读取结束
+2025-10-24 20:36:48,163 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc 打开成功
+2025-10-24 20:36:48,175 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc Time info: 开始 2025-05-12 00:00:00;结束 2025-05-12 23:50:00
+2025-10-24 20:36:48,175 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0042.nc 读取结束
+2025-10-24 20:36:48,176 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc 打开成功
+2025-10-24 20:36:48,188 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc Time info: 开始 2025-05-13 00:00:00;结束 2025-05-13 23:50:00
+2025-10-24 20:36:48,188 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0043.nc 读取结束
+2025-10-24 20:36:48,189 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc 打开成功
+2025-10-24 20:36:48,201 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc Time info: 开始 2025-05-14 00:00:00;结束 2025-05-14 23:50:00
+2025-10-24 20:36:48,201 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0044.nc 读取结束
+2025-10-24 20:36:48,202 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc 打开成功
+2025-10-24 20:36:48,213 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc Time info: 开始 2025-05-15 00:00:00;结束 2025-05-15 23:50:00
+2025-10-24 20:36:48,213 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0045.nc 读取结束
+2025-10-24 20:36:48,214 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc 打开成功
+2025-10-24 20:36:48,225 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc Time info: 开始 2025-05-16 00:00:00;结束 2025-05-16 23:50:00
+2025-10-24 20:36:48,225 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0046.nc 读取结束
+2025-10-24 20:36:48,226 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc 打开成功
+2025-10-24 20:36:48,237 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc Time info: 开始 2025-05-17 00:00:00;结束 2025-05-17 23:50:00
+2025-10-24 20:36:48,237 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0047.nc 读取结束
+2025-10-24 20:36:48,238 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc 打开成功
+2025-10-24 20:36:48,249 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc Time info: 开始 2025-05-18 00:00:00;结束 2025-05-18 23:50:00
+2025-10-24 20:36:48,249 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0048.nc 读取结束
+2025-10-24 20:36:48,250 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc 打开成功
+2025-10-24 20:36:48,261 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc Time info: 开始 2025-05-19 00:00:00;结束 2025-05-19 23:50:00
+2025-10-24 20:36:48,261 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0049.nc 读取结束
+2025-10-24 20:36:48,262 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc 打开成功
+2025-10-24 20:36:48,274 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc Time info: 开始 2025-05-20 00:00:00;结束 2025-05-20 23:50:00
+2025-10-24 20:36:48,274 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0050.nc 读取结束
+2025-10-24 20:36:48,275 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc 打开成功
+2025-10-24 20:36:48,286 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc Time info: 开始 2025-05-21 00:00:00;结束 2025-05-21 23:50:00
+2025-10-24 20:36:48,286 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0051.nc 读取结束
+2025-10-24 20:36:48,287 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc 打开成功
+2025-10-24 20:36:48,298 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc Time info: 开始 2025-05-22 00:00:00;结束 2025-05-22 23:50:00
+2025-10-24 20:36:48,298 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0052.nc 读取结束
+2025-10-24 20:36:48,299 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc 打开成功
+2025-10-24 20:36:48,311 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc Time info: 开始 2025-05-23 00:00:00;结束 2025-05-23 23:50:00
+2025-10-24 20:36:48,311 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0053.nc 读取结束
+2025-10-24 20:36:48,312 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc 打开成功
+2025-10-24 20:36:48,323 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc Time info: 开始 2025-05-24 00:00:00;结束 2025-05-24 23:50:00
+2025-10-24 20:36:48,323 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0054.nc 读取结束
+2025-10-24 20:36:48,324 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc 打开成功
+2025-10-24 20:36:48,335 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc Time info: 开始 2025-05-25 00:00:00;结束 2025-05-25 23:50:00
+2025-10-24 20:36:48,335 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0055.nc 读取结束
+2025-10-24 20:36:48,336 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc 打开成功
+2025-10-24 20:36:48,347 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc Time info: 开始 2025-05-26 00:00:00;结束 2025-05-26 23:50:00
+2025-10-24 20:36:48,347 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0056.nc 读取结束
+2025-10-24 20:36:48,348 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc 打开成功
+2025-10-24 20:36:48,360 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc Time info: 开始 2025-05-27 00:00:00;结束 2025-05-27 23:50:00
+2025-10-24 20:36:48,360 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0057.nc 读取结束
+2025-10-24 20:36:48,361 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc 打开成功
+2025-10-24 20:36:48,372 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc Time info: 开始 2025-05-28 00:00:00;结束 2025-05-28 23:50:00
+2025-10-24 20:36:48,372 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0058.nc 读取结束
+2025-10-24 20:36:48,373 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc 打开成功
+2025-10-24 20:36:48,385 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc Time info: 开始 2025-05-29 00:00:00;结束 2025-05-29 23:50:00
+2025-10-24 20:36:48,385 - FVCOM_Reader - INFO : /home/yzbsj/文档/FVCOM_lag/INPDIR/2025/subei_0059.nc 读取结束
+2025-10-24 20:36:48,391 - FVCOM_Reader - INFO : FVCOM 输出文件的时间: 2025-04-01 00:00:00 至 2025-05-29 23:50:00, 时间步长为600.0秒
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 添加文件日志处理程序: /home/yzbsj/文档/Code/pycharm/FVCOM_processing/output/log/log
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 注:离线追踪目前至多支持1100个粒子
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 读取FVCOM离线拉格朗日追踪配置
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 读取FVCOM离线拉格朗日追踪配置
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 离线拉格朗日追踪的namelist文件已写入: {nml_file}
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 离线拉格朗日追踪的namelist文件已写入: /home/yzbsj/文档/FVCOM_lag/tst_new1_run.dat
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至拉格朗日追踪源代码目录:/home/yzbsj/Downloads/Source code of Floating Macroalgal Growth and Drift Model (FMGDM_v1.0)/LAG_source_prolifera_wind_nutrients/
+2025-10-24 20:36:48,393 - LagrangianTracking(FVCOM_offline) - INFO : 进行make clean
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 修改ptraj的makefile
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择球面(经纬度)/投影坐标系
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:球面(经纬度)坐标系
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择球面(经纬度)/投影坐标系
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 选择追踪或追溯
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:追溯
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择追踪或追溯
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 您选择了:开启风拖曳
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 选择开启/关闭风拖曳
+2025-10-24 20:36:48,395 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 更新makefile(追踪/追溯)
+2025-10-24 20:36:48,396 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(追踪/追溯)
+2025-10-24 20:36:48,396 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 修改ptraj的makefile(全部)
+2025-10-24 20:36:48,396 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 编译ptraj可执行文件
+2025-10-24 20:36:50,746 - LagrangianTracking(FVCOM_offline) - INFO : 结束 - 编译ptraj可执行文件
+2025-10-24 20:36:50,746 - LagrangianTracking(FVCOM_offline) - INFO : 开始 - 运行追踪程序
+2025-10-24 20:36:50,747 - LagrangianTracking(FVCOM_offline) - INFO : 更改当前目录至:/home/yzbsj/文档/FVCOM_lag,以运行离线粒子追踪
+2025-10-24 20:36:50,747 - LagrangianTracking(FVCOM_offline) - INFO : 执行命令: ./ptraj tst_new1
+2025-10-24 20:36:50,751 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 2460825
+2025-10-24 20:36:50,752 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF NODES            :      116810
+2025-10-24 20:36:50,752 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF ELEMENTS         :      229847
+2025-10-24 20:36:50,752 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  # OF SIGMA LAYERS     :          21
+2025-10-24 20:36:50,752 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: 
+2025-10-24 20:36:50,752 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !      MESH READING      :    FINISHED
+2025-10-24 20:36:50,851 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  GRID METRICS READING  :    FINISHED
+2025-10-24 20:37:14,161 - LagrangianTracking(FVCOM_offline) - INFO : 程序输出: !  SET DOMAIN            :    COMPLETED
